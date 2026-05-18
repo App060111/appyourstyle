@@ -1,0 +1,166 @@
+{
+  "shoeSizes": [
+    {
+      "eu": 36,
+      "usMen": 4,
+      "usWomen": 5.5,
+      "uk": 3.5,
+      "cm": 22.5,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 37,
+      "usMen": 5,
+      "usWomen": 6.5,
+      "uk": 4.5,
+      "cm": 23.5,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 38,
+      "usMen": 6,
+      "usWomen": 7.5,
+      "uk": 5.5,
+      "cm": 24,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 39,
+      "usMen": 6.5,
+      "usWomen": 8.5,
+      "uk": 6,
+      "cm": 24.5,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 40,
+      "usMen": 7.5,
+      "usWomen": 9.5,
+      "uk": 7,
+      "cm": 25.5,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 41,
+      "usMen": 8,
+      "usWomen": 10,
+      "uk": 7.5,
+      "cm": 26,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 42,
+      "usMen": 9,
+      "usWomen": 11,
+      "uk": 8.5,
+      "cm": 27,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 43,
+      "usMen": 10,
+      "usWomen": 12,
+      "uk": 9.5,
+      "cm": 28,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 44,
+      "usMen": 10.5,
+      "usWomen": 12.5,
+      "uk": 10,
+      "cm": 28.5,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "eu": 45,
+      "usMen": 11.5,
+      "usWomen": 13.5,
+      "uk": 11,
+      "cm": 29.5,
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    }
+  ],
+  "babyKids": [
+    {
+      "age": "0–1 Monate",
+      "heightCm": "50",
+      "size": "50",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "1–2 Monate",
+      "heightCm": "56",
+      "size": "56",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "2–4 Monate",
+      "heightCm": "62",
+      "size": "62",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "4–6 Monate",
+      "heightCm": "68",
+      "size": "68",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "6–9 Monate",
+      "heightCm": "74",
+      "size": "74",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "9–12 Monate",
+      "heightCm": "80",
+      "size": "80",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "12–18 Monate",
+      "heightCm": "86",
+      "size": "86",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "18–24 Monate",
+      "heightCm": "92",
+      "size": "92",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "2–3 Jahre",
+      "heightCm": "98",
+      "size": "98",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    },
+    {
+      "age": "3–4 Jahre",
+      "heightCm": "104",
+      "size": "104",
+      "sourceType": "public",
+      "updatedAt": "2026-05-19"
+    }
+  ]
+}

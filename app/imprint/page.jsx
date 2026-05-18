@@ -1,21 +1,3 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-
-export const metadata = { title:'Impressum | AppYourStyle', description:'Impressum von AppYourStyle.' };
-
-export default function Imprint() {
-  return (
-    <main className="container">
-      <Header />
-      <section className="legal">
-        <h1>Impressum</h1>
-        <p><strong>Angaben gemäß § 5 TMG / DDG</strong></p>
-        <p>Florian Kissel<br/>Sauererlenstr. 23<br/>65824 Schwalbach am Taunus<br/>Deutschland</p>
-        <p><strong>Kontakt:</strong><br/>E-Mail: hello@appyourstyle.com</p>
-        <p><strong>Verantwortlich für den Inhalt:</strong><br/>Florian Kissel<br/>Sauererlenstr. 23<br/>65824 Schwalbach am Taunus</p>
-        <div className="notice">Bitte vor endgültiger Veröffentlichung E-Mail-Adresse und rechtliche Angaben prüfen lassen.</div>
-      </section>
-      <Footer />
-    </main>
-  );
-}
+import Header from '../../components/Header';import Footer from '../../components/Footer';
+export const metadata={title:'Impressum | AppYourStyle',description:'Impressum von AppYourStyle.'};
+export default function Imprint(){return <main className="container"><Header/><section className="legal"><h1>Impressum</h1><p><strong>Angaben gemäß § 5 TMG / DDG</strong></p><p>Florian Kissel<br/>Sauererlenstr. 23<br/>65824 Schwalbach am Taunus<br/>Deutschland</p><p><strong>Kontakt:</strong><br/>E-Mail: hello@appyourstyle.com</p><p><strong>Verantwortlich für den Inhalt:</strong><br/>Florian Kissel<br/>Sauererlenstr. 23<br/>65824 Schwalbach am Taunus</p><div className="notice">Bitte E-Mail-Adresse und rechtliche Angaben vor endgültiger Veröffentlichung prüfen lassen.</div></section><Footer/></main>}

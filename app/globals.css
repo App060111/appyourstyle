@@ -1,31 +1,37 @@
-* { box-sizing: border-box; }
-body { margin:0; font-family: Inter, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; color:#111; background:#fff; }
-a { color:inherit; text-decoration:none; }
-.container { max-width:1120px; margin:0 auto; padding:28px 20px; }
-.nav { display:flex; justify-content:space-between; align-items:center; gap:14px; border-bottom:1px solid #eee; padding-bottom:18px; flex-wrap:wrap; }
-.logo { font-weight:900; font-size:24px; letter-spacing:-0.04em; }
-.navlinks { display:flex; gap:14px; flex-wrap:wrap; color:#555; font-size:14px; }
-.badge { display:inline-flex; padding:8px 12px; border-radius:999px; background:#f3f0ff; color:#5b35ff; font-weight:800; font-size:14px; }
-.hero { padding:64px 0 38px; display:grid; grid-template-columns:1.1fr .9fr; gap:30px; align-items:center; }
-h1 { font-size:clamp(40px,7vw,76px); line-height:.94; letter-spacing:-0.07em; margin:0 0 20px; }
-h2 { font-size:clamp(26px,4vw,42px); letter-spacing:-0.05em; margin:0 0 14px; }
-h3 { margin-top:0; }
-p { color:#666; font-size:18px; line-height:1.55; }
-.card { border:1px solid #eee; border-radius:24px; padding:24px; box-shadow:0 20px 60px rgba(0,0,0,.06); background:#fff; }
-.converter { display:grid; gap:12px; }
-select, input, button { width:100%; padding:14px 16px; border-radius:14px; border:1px solid #e8e8e8; font-size:16px; background:white; }
-button { background:#111; color:#fff; font-weight:900; cursor:pointer; }
-.result { margin-top:16px; padding:18px; border-radius:18px; background:#f8f8f8; }
-.result strong { font-size:34px; }
-.grid { display:grid; grid-template-columns:repeat(3,1fr); gap:18px; margin:36px 0; }
-.table { width:100%; border-collapse:collapse; margin-top:24px; }
-.table th,.table td { padding:14px; border-bottom:1px solid #eee; text-align:left; vertical-align:top; }
-.footer { margin-top:60px; border-top:1px solid #eee; padding-top:22px; color:#666; display:flex; flex-wrap:wrap; gap:14px; justify-content:space-between; }
-.legal { max-width:860px; }
-.legal h1 { font-size:44px; }
-.legal h2 { margin-top:30px; font-size:26px; }
-.notice { background:#fff8e8; border:1px solid #f0d38a; border-radius:18px; padding:18px; margin:22px 0; }
-.kpi { display:grid; grid-template-columns:repeat(3,1fr); gap:14px; margin:22px 0; }
-.kpi div { background:#f8f8f8; border-radius:18px; padding:18px; }
-.kpi strong { display:block; font-size:28px; }
-@media(max-width:800px){ .hero,.grid,.kpi { grid-template-columns:1fr; } .nav { align-items:flex-start; } }
+*{box-sizing:border-box}
+:root{--black:#070707;--text:#111;--muted:#686868;--line:#e8e5df;--paper:#fbfaf6;--cream:#f4efe6;--violet:#5b35ff;--gold:#c8a24a;--green:#0e8f5a}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Inter,ui-sans-serif,system-ui,-apple-system,BlinkMacSystemFont,"Segoe UI",sans-serif;color:var(--text);background:radial-gradient(circle at top right,#f3f0ff 0,#fff 30%,#fbfaf6 100%)}
+a{text-decoration:none;color:inherit}
+.container{max-width:1200px;margin:0 auto;padding:24px 20px}
+.nav{display:flex;justify-content:space-between;align-items:center;gap:18px;padding:18px 0 20px;border-bottom:1px solid var(--line);position:sticky;top:0;background:rgba(255,255,255,.86);backdrop-filter:blur(18px);z-index:20}
+.logo{font-weight:950;font-size:30px;letter-spacing:-.07em}
+.navlinks{display:flex;gap:8px;flex-wrap:wrap;align-items:center;color:#555;font-size:14px}
+.navlinks a{padding:9px 11px;border-radius:999px}
+.navlinks a:hover{background:#f3f3f3;color:#111}
+.hero{display:grid;grid-template-columns:1.05fr .95fr;gap:36px;align-items:center;padding:74px 0 46px}
+.badge{display:inline-flex;align-items:center;gap:8px;padding:9px 14px;border-radius:999px;background:#f1edff;color:var(--violet);font-weight:850;font-size:14px}
+h1{font-size:clamp(46px,8vw,96px);line-height:.87;letter-spacing:-.09em;margin:18px 0 22px}
+h2{font-size:clamp(30px,4vw,50px);letter-spacing:-.06em;margin:0 0 14px}
+h3{font-size:22px;letter-spacing:-.035em;margin:0 0 10px}
+p{color:var(--muted);font-size:18px;line-height:1.56}
+.card,.feature{border:1px solid var(--line);border-radius:32px;padding:28px;background:rgba(255,255,255,.92);box-shadow:0 26px 90px rgba(0,0,0,.08)}
+.converter{display:grid;gap:13px}
+select,input,button{width:100%;min-height:56px;padding:16px 18px;border-radius:18px;border:1px solid #e4e1dc;background:white;font-size:16px}
+button{background:var(--black);color:#fff;border:none;font-weight:900;cursor:pointer;transition:.2s}
+button:hover{transform:translateY(-1px);box-shadow:0 14px 32px rgba(0,0,0,.18)}
+.result{margin-top:18px;padding:24px;border-radius:26px;background:linear-gradient(180deg,#f7f7f7,#fff)}
+.result strong{display:block;font-size:42px;letter-spacing:-.055em;margin:6px 0}
+.grid{display:grid;grid-template-columns:repeat(3,1fr);gap:18px;margin:34px 0}
+.table{width:100%;border-collapse:collapse;margin-top:24px;background:#fff;border-radius:26px;overflow:hidden;box-shadow:0 12px 40px rgba(0,0,0,.04)}
+.table th,.table td{padding:16px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+.table th{background:#f7f5f0;font-size:13px;text-transform:uppercase;letter-spacing:.06em;color:#555}
+.notice{background:#fff8e5;border:1px solid #ead081;border-radius:22px;padding:18px;margin:22px 0;color:#222}
+.kpi{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin:22px 0}
+.kpi div{background:#fff;border:1px solid var(--line);border-radius:22px;padding:18px}
+.kpi strong{display:block;font-size:32px;letter-spacing:-.045em}
+.brandCloud{display:flex;gap:10px;flex-wrap:wrap;margin:20px 0}
+.brandPill{padding:9px 12px;border-radius:999px;border:1px solid var(--line);background:#fff;color:#333;font-size:14px}
+.footer{margin-top:70px;border-top:1px solid var(--line);padding:26px 0;color:#666;display:flex;flex-wrap:wrap;gap:14px;justify-content:space-between}
+.legal{max-width:860px}.legal h1{font-size:54px}
+@media(max-width:860px){.container{padding:20px 18px}.hero,.grid,.kpi{grid-template-columns:1fr}.nav{position:relative;align-items:flex-start}.logo{font-size:28px}h1{font-size:54px}.navlinks{font-size:15px}.card,.feature{padding:22px}.result strong{font-size:36px}}

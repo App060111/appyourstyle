@@ -1,72 +1,92 @@
 [
   {
     "eu": 36,
-    "us_men": 4,
-    "us_women": 5.5,
+    "usMen": 4,
+    "usWomen": 5.5,
     "uk": 3.5,
-    "cm": 22.5
+    "cm": 22.5,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 37,
-    "us_men": 5,
-    "us_women": 6.5,
+    "usMen": 5,
+    "usWomen": 6.5,
     "uk": 4.5,
-    "cm": 23.5
+    "cm": 23.5,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 38,
-    "us_men": 6,
-    "us_women": 7.5,
+    "usMen": 6,
+    "usWomen": 7.5,
     "uk": 5.5,
-    "cm": 24
+    "cm": 24,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 39,
-    "us_men": 6.5,
-    "us_women": 8.5,
+    "usMen": 6.5,
+    "usWomen": 8.5,
     "uk": 6,
-    "cm": 24.5
+    "cm": 24.5,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 40,
-    "us_men": 7.5,
-    "us_women": 9.5,
+    "usMen": 7.5,
+    "usWomen": 9.5,
     "uk": 7,
-    "cm": 25.5
+    "cm": 25.5,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 41,
-    "us_men": 8,
-    "us_women": 10,
+    "usMen": 8,
+    "usWomen": 10,
     "uk": 7.5,
-    "cm": 26
+    "cm": 26,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 42,
-    "us_men": 9,
-    "us_women": 11,
+    "usMen": 9,
+    "usWomen": 11,
     "uk": 8.5,
-    "cm": 27
+    "cm": 27,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 43,
-    "us_men": 10,
-    "us_women": 12,
+    "usMen": 10,
+    "usWomen": 12,
     "uk": 9.5,
-    "cm": 28
+    "cm": 28,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 44,
-    "us_men": 10.5,
-    "us_women": 12.5,
+    "usMen": 10.5,
+    "usWomen": 12.5,
     "uk": 10,
-    "cm": 28.5
+    "cm": 28.5,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   },
   {
     "eu": 45,
-    "us_men": 11.5,
-    "us_women": 13.5,
+    "usMen": 11.5,
+    "usWomen": 13.5,
     "uk": 11,
-    "cm": 29.5
+    "cm": 29.5,
+    "sourceType": "public",
+    "updatedAt": "2026-05-19"
   }
 ]

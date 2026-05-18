@@ -1,0 +1,632 @@
+[
+  {
+    "id": "nike",
+    "name": "Nike",
+    "segment": "sportswear",
+    "defaultFitType": "athletic",
+    "sourceType": "public",
+    "sourceUrl": "https://www.nike.com/size-fit",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "adidas",
+    "name": "Adidas",
+    "segment": "sportswear",
+    "defaultFitType": "regular athletic",
+    "sourceType": "public",
+    "sourceUrl": "https://www.adidas.com/us/help/size_charts",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "zara",
+    "name": "Zara",
+    "segment": "fast fashion",
+    "defaultFitType": "fashion slim/regular",
+    "sourceType": "public",
+    "sourceUrl": "https://www.zara.com",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "hm",
+    "name": "H&M",
+    "segment": "fast fashion",
+    "defaultFitType": "regular",
+    "sourceType": "public",
+    "sourceUrl": "https://www2.hm.com",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "asos",
+    "name": "ASOS",
+    "segment": "marketplace",
+    "defaultFitType": "product-dependent",
+    "sourceType": "public",
+    "sourceUrl": "https://www.asos.com/discover/size-charts/",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "gucci",
+    "name": "Gucci",
+    "segment": "luxury",
+    "defaultFitType": "italian luxury",
+    "sourceType": "public",
+    "sourceUrl": "https://www.gucci.com",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "puma",
+    "name": "Puma",
+    "segment": "sportswear",
+    "defaultFitType": "regular athletic",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "uniqlo",
+    "name": "Uniqlo",
+    "segment": "basics",
+    "defaultFitType": "regular basics",
+    "sourceType": "public",
+    "sourceUrl": "https://www.uniqlo.com",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "newbalance",
+    "name": "New Balance",
+    "segment": "sportswear shoes",
+    "defaultFitType": "shoe model dependent",
+    "sourceType": "public",
+    "sourceUrl": "https://www.newbalance.com/size-guide.html",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "balenciaga",
+    "name": "Balenciaga",
+    "segment": "luxury streetwear",
+    "defaultFitType": "oversized luxury",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "louisvuitton",
+    "name": "Louis Vuitton",
+    "segment": "luxury",
+    "defaultFitType": "luxury model dependent",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "prada",
+    "name": "Prada",
+    "segment": "luxury",
+    "defaultFitType": "italian luxury",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "dior",
+    "name": "Dior",
+    "segment": "luxury",
+    "defaultFitType": "luxury model dependent",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "levis",
+    "name": "Levi's",
+    "segment": "denim",
+    "defaultFitType": "denim fit dependent",
+    "sourceType": "public",
+    "sourceUrl": "https://www.levi.com",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "public-reference"
+  },
+  {
+    "id": "tommyhilfiger",
+    "name": "Tommy Hilfiger",
+    "segment": "premium casual",
+    "defaultFitType": "classic regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "calvinklein",
+    "name": "Calvin Klein",
+    "segment": "premium casual",
+    "defaultFitType": "modern slim/regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "underarmour",
+    "name": "Under Armour",
+    "segment": "sportswear",
+    "defaultFitType": "athletic slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "patagonia",
+    "name": "Patagonia",
+    "segment": "outdoor",
+    "defaultFitType": "outdoor regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "thenorthface",
+    "name": "The North Face",
+    "segment": "outdoor",
+    "defaultFitType": "outdoor regular/relaxed",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "jordan",
+    "name": "Jordan",
+    "segment": "sportswear",
+    "defaultFitType": "athletic streetwear",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "converse",
+    "name": "Converse",
+    "segment": "shoes",
+    "defaultFitType": "classic sneaker",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "vans",
+    "name": "Vans",
+    "segment": "shoes",
+    "defaultFitType": "classic sneaker",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "birkenstock",
+    "name": "Birkenstock",
+    "segment": "shoes",
+    "defaultFitType": "footbed regular/narrow",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "mango",
+    "name": "Mango",
+    "segment": "fashion",
+    "defaultFitType": "fashion regular/slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "bershka",
+    "name": "Bershka",
+    "segment": "fast fashion",
+    "defaultFitType": "youth fashion slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "pullandbear",
+    "name": "Pull&Bear",
+    "segment": "fast fashion",
+    "defaultFitType": "youth casual",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "massimodutti",
+    "name": "Massimo Dutti",
+    "segment": "premium fashion",
+    "defaultFitType": "tailored regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "cos",
+    "name": "COS",
+    "segment": "premium basics",
+    "defaultFitType": "relaxed modern",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "arket",
+    "name": "ARKET",
+    "segment": "premium basics",
+    "defaultFitType": "regular modern",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "lululemon",
+    "name": "Lululemon",
+    "segment": "athleisure",
+    "defaultFitType": "athletic technical",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "reebok",
+    "name": "Reebok",
+    "segment": "sportswear",
+    "defaultFitType": "regular athletic",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "fila",
+    "name": "Fila",
+    "segment": "sportswear",
+    "defaultFitType": "regular athletic",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "superdry",
+    "name": "Superdry",
+    "segment": "casual",
+    "defaultFitType": "often slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "diesel",
+    "name": "Diesel",
+    "segment": "denim premium",
+    "defaultFitType": "fashion denim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "boss",
+    "name": "BOSS",
+    "segment": "premium",
+    "defaultFitType": "modern slim/regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "lacoste",
+    "name": "Lacoste",
+    "segment": "premium casual",
+    "defaultFitType": "classic regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "stoneisland",
+    "name": "Stone Island",
+    "segment": "premium streetwear",
+    "defaultFitType": "regular/slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "moncler",
+    "name": "Moncler",
+    "segment": "luxury outerwear",
+    "defaultFitType": "outerwear model dependent",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "celine",
+    "name": "Celine",
+    "segment": "luxury",
+    "defaultFitType": "luxury slim/regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "saintlaurent",
+    "name": "Saint Laurent",
+    "segment": "luxury",
+    "defaultFitType": "slim luxury",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "offwhite",
+    "name": "Off-White",
+    "segment": "luxury streetwear",
+    "defaultFitType": "streetwear oversized",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "palmangels",
+    "name": "Palm Angels",
+    "segment": "luxury streetwear",
+    "defaultFitType": "streetwear relaxed",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "fearofgod",
+    "name": "Fear of God",
+    "segment": "luxury streetwear",
+    "defaultFitType": "oversized relaxed",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "gymshark",
+    "name": "Gymshark",
+    "segment": "fitness",
+    "defaultFitType": "athletic slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "shein",
+    "name": "SHEIN",
+    "segment": "fast fashion",
+    "defaultFitType": "product-dependent",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "ca",
+    "name": "C&A",
+    "segment": "mass market",
+    "defaultFitType": "regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "esprit",
+    "name": "Esprit",
+    "segment": "casual",
+    "defaultFitType": "regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "only",
+    "name": "ONLY",
+    "segment": "womenswear",
+    "defaultFitType": "regular/slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "veromoda",
+    "name": "Vero Moda",
+    "segment": "womenswear",
+    "defaultFitType": "regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "jackandjones",
+    "name": "Jack & Jones",
+    "segment": "menswear",
+    "defaultFitType": "regular/slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "selected",
+    "name": "Selected",
+    "segment": "premium casual",
+    "defaultFitType": "regular/slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "carhartt",
+    "name": "Carhartt WIP",
+    "segment": "workwear streetwear",
+    "defaultFitType": "relaxed",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "dickies",
+    "name": "Dickies",
+    "segment": "workwear streetwear",
+    "defaultFitType": "relaxed workwear",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "crocs",
+    "name": "Crocs",
+    "segment": "shoes",
+    "defaultFitType": "roomy fit",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "ugg",
+    "name": "UGG",
+    "segment": "shoes",
+    "defaultFitType": "boot/slipper dependent",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "skechers",
+    "name": "Skechers",
+    "segment": "shoes",
+    "defaultFitType": "comfort regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "salomon",
+    "name": "Salomon",
+    "segment": "outdoor shoes",
+    "defaultFitType": "technical footwear",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "onrunning",
+    "name": "On Running",
+    "segment": "running shoes",
+    "defaultFitType": "performance shoe dependent",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "veja",
+    "name": "Veja",
+    "segment": "shoes",
+    "defaultFitType": "sneaker regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "abercrombie",
+    "name": "Abercrombie & Fitch",
+    "segment": "casual",
+    "defaultFitType": "regular/slim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "hollister",
+    "name": "Hollister",
+    "segment": "casual",
+    "defaultFitType": "youth slim/regular",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "americaneagle",
+    "name": "American Eagle",
+    "segment": "casual denim",
+    "defaultFitType": "regular denim",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  },
+  {
+    "id": "aritzia",
+    "name": "Aritzia",
+    "segment": "womenswear",
+    "defaultFitType": "modern womenswear",
+    "sourceType": "public",
+    "sourceUrl": "",
+    "updatedAt": "2026-05-19",
+    "dataStatus": "estimated-public-profile"
+  }
+]

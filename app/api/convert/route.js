@@ -1,7 +1,6 @@
-import { convertSize, percent } from '../../../lib/sizeEngine';
+import { convertSize } from '../../../lib/data';
 
-export async function POST(request) {
+export async function POST(request){
   const body = await request.json();
-  const result = convertSize(body.fromBrand, body.toBrand, body.size);
-  return Response.json({...result, confidencePercent: percent(result.confidence)});
+  return Response.json(convertSize(body));
 }

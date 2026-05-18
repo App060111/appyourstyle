@@ -1,52 +1,22 @@
-# Update integrieren — einfache Anleitung
+# Update integrieren
 
-## Ziel
-Dieses Update ersetzt die bisherigen Dateien und erweitert die Live-Seite um:
-- echte SEO-Landingpages
-- mehr Mapping-Daten
-- Impressum mit Florian Kissel
-- Datenschutz-Grundstruktur
-- Nike→Zara, Adidas vs H&M, EU42→US Men
-
-## Schritt 1
-ZIP entpacken.
-
-## Schritt 2
-GitHub Repository `appyourstyle` öffnen.
-
-## Schritt 3
-Klicke:
-Add file → Upload files
-
-## Schritt 4
-ALLE Dateien und Ordner aus dieser ZIP hochladen:
-- app
-- components
-- data
-- docs
-- lib
-- package.json
-- next.config.js
-- README.md
-
-## Schritt 5
-Wenn GitHub fragt, ob Dateien ersetzt werden sollen:
-Bestätigen / hochladen.
-
-## Schritt 6
-Unten auf `Commit changes` klicken.
-
-## Schritt 7
-Vercel erkennt die Änderung automatisch und deployed neu.
-
-## Schritt 8
-Nach 1–2 Minuten testen:
-- /
-- /nike-to-zara-size
-- /adidas-vs-hm-fit
-- /eu-42-to-us-men
-- /imprint
-- /privacy
-
-## Wichtig
-Nach dem Upload muss Vercel automatisch einen neuen Deployment-Prozess starten.
+1. ZIP entpacken.
+2. GitHub Repository `appyourstyle` öffnen.
+3. `Add file` → `Upload files`.
+4. Alle entpackten Dateien und Ordner hochladen.
+5. Vorhandene Dateien ersetzen.
+6. Commit Message: `Fashion Size Intelligence Platform Update`
+7. `Commit changes` klicken.
+8. Vercel deployed automatisch neu.
+9. Testen:
+   - /
+   - /brands
+   - /size-guides
+   - /nike-to-zara-size
+   - /adidas-vs-hm-fit
+   - /eu-42-to-us-men
+   - /nike-size-chart
+   - /zara-size-guide
+   - /gucci-shoe-size-converter
+   - /imprint
+   - /privacy
