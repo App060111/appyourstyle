@@ -3,17 +3,8 @@ import Footer from '../components/Footer';
 import Converter from '../components/Converter';
 
 export default function Home() {
-  const jsonLd = {
-    '@context':'https://schema.org',
-    '@type':'WebSite',
-    name:'AppYourStyle',
-    description:'Universal Size Converter für Fashiongrößen.',
-    potentialAction:{'@type':'SearchAction', target:'https://appyourstyle.com/questions/{search_term_string}', 'query-input':'required name=search_term_string'}
-  };
-
   return (
     <main className="container">
-      <script type="application/ld+json" dangerouslySetInnerHTML={{__html:JSON.stringify(jsonLd)}} />
       <Header />
       <section className="hero">
         <div>
@@ -24,17 +15,10 @@ export default function Home() {
         </div>
         <Converter />
       </section>
-
       <section className="grid">
-        <a className="card" href="/convert/nike/zara"><h3>Nike → Zara</h3><p>Welche Zara Größe passt, wenn du Nike M trägst?</p></a>
-        <a className="card" href="/shoe-size-converter"><h3>Schuhgrößen</h3><p>EU, US, UK und CM umrechnen.</p></a>
-        <a className="card" href="/baby-size-guide"><h3>Babygrößen</h3><p>Baby- und Kindergrößen nach Alter und Körpergröße.</p></a>
-      </section>
-
-      <section className="grid">
-        <a className="card" href="/fit/oversized"><h3>Oversized Fit</h3><p>Verstehe, wann du kleiner oder normal wählen solltest.</p></a>
-        <a className="card" href="/fit/slim-fit"><h3>Slim Fit</h3><p>Körpernaher Schnitt und Größenrisiko erklärt.</p></a>
-        <a className="card" href="/faq"><h3>FAQ</h3><p>Wie funktioniert AppYourStyle und wie genau sind Empfehlungen?</p></a>
+        <a className="card" href="/nike-to-zara-size"><h3>Nike → Zara</h3><p>Welche Zara Größe passt, wenn du Nike M trägst?</p></a>
+        <a className="card" href="/adidas-vs-hm-fit"><h3>Adidas vs H&M</h3><p>Fit-Vergleich zwischen Adidas und H&M.</p></a>
+        <a className="card" href="/eu-42-to-us-men"><h3>EU 42 → US Men</h3><p>Schuhgröße EU 42 in US Herren umrechnen.</p></a>
       </section>
       <Footer />
     </main>

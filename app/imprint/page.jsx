@@ -9,12 +9,11 @@ export default function Imprint() {
       <Header />
       <section className="legal">
         <h1>Impressum</h1>
-        <div className="notice">Wichtig: Diese Seite muss vor Veröffentlichung mit echten Anbieterangaben ergänzt werden.</div>
         <p><strong>Angaben gemäß § 5 TMG / DDG</strong></p>
-        <p>Name / Firma: [bitte ergänzen]</p>
-        <p>Adresse: [bitte ergänzen]</p>
-        <p>E-Mail: [bitte ergänzen]</p>
-        <p>Verantwortlich für den Inhalt: [bitte ergänzen]</p>
+        <p>Florian Kissel<br/>Sauererlenstr. 23<br/>65824 Schwalbach am Taunus<br/>Deutschland</p>
+        <p><strong>Kontakt:</strong><br/>E-Mail: hello@appyourstyle.com</p>
+        <p><strong>Verantwortlich für den Inhalt:</strong><br/>Florian Kissel<br/>Sauererlenstr. 23<br/>65824 Schwalbach am Taunus</p>
+        <div className="notice">Bitte vor endgültiger Veröffentlichung E-Mail-Adresse und rechtliche Angaben prüfen lassen.</div>
       </section>
       <Footer />
     </main>

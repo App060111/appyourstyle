@@ -38,6 +38,7 @@ export default function Converter() {
           <div>{result.fromBrand} {result.inputSize} entspricht ungefähr</div>
           <strong>{result.toBrand} {result.outputSize}</strong>
           <p>{result.note}</p>
+          <p>Confidence: {result.confidencePercent}</p>
           <p>Retourenrisiko: {result.returnRisk}</p>
         </div>
       )}

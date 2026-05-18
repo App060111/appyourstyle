@@ -1,84 +1,171 @@
 {
-  "mappings": {
-    "nike:zara": {
-      "XS": "S",
-      "S": "M",
-      "M": "L",
-      "L": "XL",
-      "XL": "XXL",
-      "XXL": "XXL"
+  "publicDataNotice": "MVP-Datensatz aus öffentlich zugänglichen Größenlogiken, Hersteller-Size-Charts und allgemein bekannten EU/US/UK Umrechnungen. Für rechtssichere Produktgenauigkeit müssen Daten regelmäßig geprüft und erweitert werden.",
+  "brandFitProfiles": {
+    "nike": {
+      "fit": "sportlich / regular bis slim",
+      "tendency": "leicht körpernah",
+      "confidence": 0.78
     },
-    "zara:nike": {
-      "S": "XS",
-      "M": "S",
-      "L": "M",
-      "XL": "L",
-      "XXL": "XL"
+    "zara": {
+      "fit": "fashion fit / oft schmal oder trendbasiert",
+      "tendency": "häufig kleiner oder schmaler",
+      "confidence": 0.74
     },
-    "adidas:nike": {
-      "XS": "XS",
-      "S": "S",
-      "M": "M",
-      "L": "L",
-      "XL": "XL",
-      "XXL": "XXL"
+    "adidas": {
+      "fit": "sportlich / regular",
+      "tendency": "oft ähnlich Nike, teils lockerer",
+      "confidence": 0.76
     },
-    "nike:adidas": {
-      "XS": "XS",
-      "S": "S",
-      "M": "M",
-      "L": "L",
-      "XL": "XL",
-      "XXL": "XXL"
+    "hm": {
+      "fit": "mass-market regular",
+      "tendency": "kollektionsabhängig",
+      "confidence": 0.68
     },
-    "nike:gucci": {
-      "XS": "44",
-      "S": "46",
-      "M": "48/50",
-      "L": "52",
-      "XL": "54",
-      "XXL": "56"
+    "asos": {
+      "fit": "produktabhängig",
+      "tendency": "breites Größenspektrum",
+      "confidence": 0.62
     },
-    "gucci:nike": {
-      "44": "XS",
-      "46": "S",
-      "48": "M",
-      "50": "M",
-      "52": "L",
-      "54": "XL",
-      "56": "XXL"
-    },
-    "hm:zara": {
-      "XS": "S",
-      "S": "M",
-      "M": "L",
-      "L": "XL",
-      "XL": "XXL",
-      "XXL": "XXL"
-    },
-    "zara:hm": {
-      "S": "XS",
-      "M": "S",
-      "L": "M",
-      "XL": "L",
-      "XXL": "XL"
-    },
-    "asos:zara": {
-      "XS": "S",
-      "S": "M",
-      "M": "L",
-      "L": "XL",
-      "XL": "XXL",
-      "XXL": "XXL"
+    "gucci": {
+      "fit": "luxury / italienische Größen",
+      "tendency": "schnittabhängig",
+      "confidence": 0.6
     }
   },
-  "fitNotes": {
-    "zara": "f\u00e4llt h\u00e4ufig schmaler aus; bei unsicherem Fit eine Gr\u00f6\u00dfe gr\u00f6\u00dfer pr\u00fcfen",
-    "nike": "meist sportlich-normaler Fit",
-    "adidas": "meist \u00e4hnlich zu Nike, je nach Kollektion leicht lockerer",
-    "hm": "abh\u00e4ngig von Kollektion, h\u00e4ufig regul\u00e4r",
-    "gucci": "Luxusgr\u00f6\u00dfen, Schnitt stark modellabh\u00e4ngig",
-    "asos": "stark produktabh\u00e4ngig",
-    "levis": "Jeansgr\u00f6\u00dfen h\u00e4ngen stark von Schnitt, Bundweite und Beinl\u00e4nge ab"
+  "mappings": {
+    "nike:zara": {
+      "XS": {
+        "size": "S",
+        "confidence": 0.78,
+        "risk": "mittel",
+        "note": "Zara fällt bei vielen Fashion-Fits schmaler aus; Nike XS entspricht oft Zara S."
+      },
+      "S": {
+        "size": "M",
+        "confidence": 0.8,
+        "risk": "mittel",
+        "note": "Nike S entspricht bei Zara häufig M, besonders bei schmalen Oberteilen."
+      },
+      "M": {
+        "size": "L",
+        "confidence": 0.82,
+        "risk": "mittel",
+        "note": "Nike M entspricht bei Zara oft L, wenn Zara-Artikel schmal oder trendbasiert geschnitten ist."
+      },
+      "L": {
+        "size": "XL",
+        "confidence": 0.78,
+        "risk": "mittel",
+        "note": "Nike L kann bei Zara XL sein, abhängig vom Schnitt."
+      },
+      "XL": {
+        "size": "XXL",
+        "confidence": 0.72,
+        "risk": "mittel-hoch",
+        "note": "Bei Zara XL/XXL besonders Produktmaße prüfen."
+      },
+      "XXL": {
+        "size": "XXL",
+        "confidence": 0.6,
+        "risk": "hoch",
+        "note": "Zara führt XXL nicht bei jedem Produkt; Verfügbarkeit prüfen."
+      }
+    },
+    "zara:nike": {
+      "S": {
+        "size": "XS",
+        "confidence": 0.76,
+        "risk": "mittel",
+        "note": "Zara S kann Nike XS entsprechen."
+      },
+      "M": {
+        "size": "S",
+        "confidence": 0.78,
+        "risk": "mittel",
+        "note": "Zara M kann Nike S entsprechen."
+      },
+      "L": {
+        "size": "M",
+        "confidence": 0.82,
+        "risk": "mittel",
+        "note": "Zara L entspricht häufig Nike M."
+      },
+      "XL": {
+        "size": "L",
+        "confidence": 0.76,
+        "risk": "mittel",
+        "note": "Zara XL entspricht häufig Nike L."
+      },
+      "XXL": {
+        "size": "XL",
+        "confidence": 0.68,
+        "risk": "mittel-hoch",
+        "note": "Zara XXL kann Nike XL entsprechen."
+      }
+    },
+    "adidas:hm": {
+      "XS": {
+        "size": "XS",
+        "confidence": 0.68,
+        "risk": "mittel",
+        "note": "Adidas XS zu H&M XS ist oft möglich, aber H&M ist kollektionsabhängig."
+      },
+      "S": {
+        "size": "S",
+        "confidence": 0.7,
+        "risk": "mittel",
+        "note": "Adidas S entspricht meist H&M S; bei Slim-Fit H&M M prüfen."
+      },
+      "M": {
+        "size": "M",
+        "confidence": 0.71,
+        "risk": "mittel",
+        "note": "Adidas M entspricht häufig H&M M; sportliche Adidas-Fits können lockerer wirken."
+      },
+      "L": {
+        "size": "L",
+        "confidence": 0.69,
+        "risk": "mittel",
+        "note": "Adidas L entspricht oft H&M L; Material und Schnitt beachten."
+      },
+      "XL": {
+        "size": "XL",
+        "confidence": 0.65,
+        "risk": "mittel",
+        "note": "Adidas XL zu H&M XL ist meist sinnvoll, Produktmaße prüfen."
+      }
+    },
+    "hm:adidas": {
+      "XS": {
+        "size": "XS",
+        "confidence": 0.66,
+        "risk": "mittel",
+        "note": "H&M XS entspricht oft Adidas XS."
+      },
+      "S": {
+        "size": "S",
+        "confidence": 0.69,
+        "risk": "mittel",
+        "note": "H&M S entspricht oft Adidas S."
+      },
+      "M": {
+        "size": "M",
+        "confidence": 0.7,
+        "risk": "mittel",
+        "note": "H&M M entspricht oft Adidas M."
+      },
+      "L": {
+        "size": "L",
+        "confidence": 0.68,
+        "risk": "mittel",
+        "note": "H&M L entspricht oft Adidas L."
+      },
+      "XL": {
+        "size": "XL",
+        "confidence": 0.64,
+        "risk": "mittel",
+        "note": "H&M XL entspricht oft Adidas XL."
+      }
+    }
   }
 }

@@ -1,6 +1,6 @@
 {
-  "name": "appyourstyle-complete-deployable",
-  "version": "1.0.0",
+  "name": "appyourstyle-data-seo-update",
+  "version": "1.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
