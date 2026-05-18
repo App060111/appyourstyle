@@ -1,0 +1,52 @@
+[
+  {
+    "age": "0\u20131 Monate",
+    "height_cm": "50",
+    "size": "50"
+  },
+  {
+    "age": "1\u20132 Monate",
+    "height_cm": "56",
+    "size": "56"
+  },
+  {
+    "age": "2\u20134 Monate",
+    "height_cm": "62",
+    "size": "62"
+  },
+  {
+    "age": "4\u20136 Monate",
+    "height_cm": "68",
+    "size": "68"
+  },
+  {
+    "age": "6\u20139 Monate",
+    "height_cm": "74",
+    "size": "74"
+  },
+  {
+    "age": "9\u201312 Monate",
+    "height_cm": "80",
+    "size": "80"
+  },
+  {
+    "age": "12\u201318 Monate",
+    "height_cm": "86",
+    "size": "86"
+  },
+  {
+    "age": "18\u201324 Monate",
+    "height_cm": "92",
+    "size": "92"
+  },
+  {
+    "age": "2\u20133 Jahre",
+    "height_cm": "98",
+    "size": "98"
+  },
+  {
+    "age": "3\u20134 Jahre",
+    "height_cm": "104",
+    "size": "104"
+  }
+]

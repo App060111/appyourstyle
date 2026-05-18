@@ -1,0 +1,84 @@
+{
+  "mappings": {
+    "nike:zara": {
+      "XS": "S",
+      "S": "M",
+      "M": "L",
+      "L": "XL",
+      "XL": "XXL",
+      "XXL": "XXL"
+    },
+    "zara:nike": {
+      "S": "XS",
+      "M": "S",
+      "L": "M",
+      "XL": "L",
+      "XXL": "XL"
+    },
+    "adidas:nike": {
+      "XS": "XS",
+      "S": "S",
+      "M": "M",
+      "L": "L",
+      "XL": "XL",
+      "XXL": "XXL"
+    },
+    "nike:adidas": {
+      "XS": "XS",
+      "S": "S",
+      "M": "M",
+      "L": "L",
+      "XL": "XL",
+      "XXL": "XXL"
+    },
+    "nike:gucci": {
+      "XS": "44",
+      "S": "46",
+      "M": "48/50",
+      "L": "52",
+      "XL": "54",
+      "XXL": "56"
+    },
+    "gucci:nike": {
+      "44": "XS",
+      "46": "S",
+      "48": "M",
+      "50": "M",
+      "52": "L",
+      "54": "XL",
+      "56": "XXL"
+    },
+    "hm:zara": {
+      "XS": "S",
+      "S": "M",
+      "M": "L",
+      "L": "XL",
+      "XL": "XXL",
+      "XXL": "XXL"
+    },
+    "zara:hm": {
+      "S": "XS",
+      "M": "S",
+      "L": "M",
+      "XL": "L",
+      "XXL": "XL"
+    },
+    "asos:zara": {
+      "XS": "S",
+      "S": "M",
+      "M": "L",
+      "L": "XL",
+      "XL": "XXL",
+      "XXL": "XXL"
+    }
+  },
+  "fitNotes": {
+    "zara": "f\u00e4llt h\u00e4ufig schmaler aus; bei unsicherem Fit eine Gr\u00f6\u00dfe gr\u00f6\u00dfer pr\u00fcfen",
+    "nike": "meist sportlich-normaler Fit",
+    "adidas": "meist \u00e4hnlich zu Nike, je nach Kollektion leicht lockerer",
+    "hm": "abh\u00e4ngig von Kollektion, h\u00e4ufig regul\u00e4r",
+    "gucci": "Luxusgr\u00f6\u00dfen, Schnitt stark modellabh\u00e4ngig",
+    "asos": "stark produktabh\u00e4ngig",
+    "levis": "Jeansgr\u00f6\u00dfen h\u00e4ngen stark von Schnitt, Bundweite und Beinl\u00e4nge ab"
+  }
+}
