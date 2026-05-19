@@ -1,6 +1,6 @@
 {
-  "name": "appyourstyle-fashion-size-intelligence-platform",
-  "version": "2.0.0",
+  "name": "appyourstyle-ux-trust-refinement",
+  "version": "2.1.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

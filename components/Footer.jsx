@@ -4,7 +4,7 @@ export default function Footer(){
       <span>AppYourStyle — Fashion Size Intelligence</span>
       <div className="navlinks">
         <a href="/brands">Brands</a>
-        <a href="/size-guides">Size Guides</a>
+        <a href="/size-guides">Guides</a>
         <a href="/faq">FAQ</a>
         <a href="/contact">Kontakt</a>
         <a href="/privacy">Datenschutz</a>

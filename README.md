@@ -1,24 +1,15 @@
-# AppYourStyle — Fashion Size Intelligence Platform
+# AppYourStyle — UX & Trust Refinement Update
 
-AppYourStyle ist „Google Translate für Fashiongrößen“.
+Dieses Update behält alle bestehenden Funktionen bei und verbessert:
+- moderne Premium-Optik
+- Mobile Navigation
+- Hero-Bereich
+- Converter-Sichtbarkeit
+- reduzierte Top-Markenliste auf der Startseite
+- vollständige Markenliste auf `/brands`
+- bessere Ergebnis-Card
+- Quellen-/Trust-Hinweise
+- alle SEO-Seiten und Datenmodelle bleiben erhalten
 
-## Enthalten
-- Premium Fashion-Tech UI
-- Mobile First
-- Marken-Datenbank mit vielen öffentlich relevanten Marken
-- `brands.json`
-- `fitProfiles.json`
-- `sizeMappings.json`
-- `regionMappings.json`
-- Converter für alle Marken
-- Source-Logik: official / public / estimated
-- Confidence Score
-- Fit-Typen
-- Retourenrisiko
-- SEO-Landingpages
-- FAQ JSON-LD
-- Impressum, Datenschutz, Nutzung, Kontakt
-- Vercel-ready Next.js Struktur
-
-## Wichtige Wahrheit
-Nicht alle Markendaten sind offizielle Partnerdaten. Datensätze tragen deshalb `sourceType` und `dataStatus`.
+Upload:
+GitHub → Add file → Upload files → alle entpackten Inhalte hochladen → Commit changes.

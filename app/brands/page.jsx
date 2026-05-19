@@ -1,34 +1,3 @@
-import Header from '../../components/Header';
-import Footer from '../../components/Footer';
-import { brands, fitProfiles, percent } from '../../lib/data';
-
-export const metadata = {
-  title:'Alle Marken | AppYourStyle',
-  description:'Alle integrierten Marken, Fit-Profile, Quellenlogik und Datenstatus.'
-};
-
-export default function Brands(){
-  return (
-    <main className="container">
-      <Header/>
-      <section className="hero">
-        <div>
-          <span className="badge">Brand Intelligence</span>
-          <h1>Alle integrierten Marken.</h1>
-          <p>Markenprofile mit Segment, Fit-Typ, Datenstatus, Quelle und Aktualisierung.</p>
-        </div>
-        <div className="card"><h2>{brands.length} Marken</h2><p>Sportswear, Luxury, Fast Fashion, Denim, Outdoor, Streetwear, Schuhe und Womenswear.</p></div>
-      </section>
-      <table className="table">
-        <thead><tr><th>Marke</th><th>Segment</th><th>Fit</th><th>Quelle</th><th>Status</th></tr></thead>
-        <tbody>
-          {brands.map(b => {
-            const fp = fitProfiles[b.id];
-            return <tr key={b.id}><td>{b.name}</td><td>{b.segment}</td><td>{fp?.fitType}<br/>{fp?.tendency}</td><td>{b.sourceType}</td><td>{b.dataStatus}</td></tr>
-          })}
-        </tbody>
-      </table>
-      <Footer/>
-    </main>
-  )
-}
+import Header from '../../components/Header';import Footer from '../../components/Footer';import {brands,fitProfiles} from '../../lib/data';
+export const metadata={title:'Alle Marken | AppYourStyle',description:'Alle integrierten Marken, Fit-Profile, Quellenlogik und Datenstatus.'};
+export default function Brands(){return <main className="container"><Header/><section className="hero"><div><span className="badge">Brand Intelligence</span><h1>Alle Marken.</h1><p>Markenprofile mit Segment, Fit-Typ, Datenstatus, Quelle und Aktualisierung.</p></div><div className="card"><h2>{brands.length} Marken</h2><p>Sportswear, Luxury, Fast Fashion, Denim, Outdoor, Streetwear, Schuhe und Womenswear.</p></div></section><table className="table"><thead><tr><th>Marke</th><th>Segment</th><th>Fit</th><th>Quelle</th><th>Status</th></tr></thead><tbody>{brands.map(b=>{const fp=fitProfiles[b.id];return <tr key={b.id}><td>{b.name}</td><td>{b.segment}</td><td>{fp?.fitType}<br/>{fp?.tendency}</td><td>{fp?.sourceType}</td><td>{b.dataStatus}</td></tr>})}</tbody></table><Footer/></main>}
