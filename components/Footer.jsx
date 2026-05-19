@@ -1,16 +1,1 @@
-export default function Footer(){
-  return (
-    <footer className="footer">
-      <span>AppYourStyle — Fashion Size Intelligence</span>
-      <div className="navlinks">
-        <a href="/brands">Brands</a>
-        <a href="/size-guides">Guides</a>
-        <a href="/faq">FAQ</a>
-        <a href="/contact">Kontakt</a>
-        <a href="/privacy">Datenschutz</a>
-        <a href="/imprint">Impressum</a>
-        <a href="/terms">Nutzung</a>
-      </div>
-    </footer>
-  )
-}
+export default function Footer(){return <footer className="footer"><div><strong>AppYourStyle</strong><p>Universal Fashion Size Intelligence für Marken, Regionen, Fits und Größenlogik.</p></div><div><strong>Explore</strong><div className="navlinks"><a href="/brands">Brands</a><a href="/size-guides">Guides</a><a href="/nike-to-zara-size">Nike→Zara</a><a href="/adidas-vs-hm-fit">Adidas vs H&M</a></div></div><div><strong>Legal</strong><div className="navlinks"><a href="/contact">Kontakt</a><a href="/privacy">Datenschutz</a><a href="/imprint">Impressum</a><a href="/terms">Nutzung</a></div></div></footer>}

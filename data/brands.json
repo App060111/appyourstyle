@@ -3,10 +3,14 @@
     "id": "nike",
     "name": "Nike",
     "segment": "sportswear",
-    "defaultFitType": "athletic",
+    "defaultFitType": "athletic regular",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "https://www.nike.com/size-fit",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "NIK",
     "dataStatus": "public-reference"
   },
   {
@@ -14,9 +18,13 @@
     "name": "Adidas",
     "segment": "sportswear",
     "defaultFitType": "regular athletic",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "https://www.adidas.com/us/help/size_charts",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "ADI",
     "dataStatus": "public-reference"
   },
   {
@@ -24,9 +32,13 @@
     "name": "Zara",
     "segment": "fast fashion",
     "defaultFitType": "fashion slim/regular",
+    "region": "Global",
+    "categoryGroup": "fast-fashion",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "https://www.zara.com",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "ZAR",
     "dataStatus": "public-reference"
   },
   {
@@ -34,9 +46,13 @@
     "name": "H&M",
     "segment": "fast fashion",
     "defaultFitType": "regular",
+    "region": "Global",
+    "categoryGroup": "fast-fashion",
+    "luxuryLevel": 1,
     "sourceType": "public",
-    "sourceUrl": "https://www2.hm.com",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "H&M",
     "dataStatus": "public-reference"
   },
   {
@@ -44,9 +60,13 @@
     "name": "ASOS",
     "segment": "marketplace",
     "defaultFitType": "product-dependent",
+    "region": "Global",
+    "categoryGroup": "marketplace",
+    "luxuryLevel": 1,
     "sourceType": "public",
-    "sourceUrl": "https://www.asos.com/discover/size-charts/",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "ASO",
     "dataStatus": "public-reference"
   },
   {
@@ -54,9 +74,13 @@
     "name": "Gucci",
     "segment": "luxury",
     "defaultFitType": "italian luxury",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
-    "sourceUrl": "https://www.gucci.com",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "GUC",
     "dataStatus": "public-reference"
   },
   {
@@ -64,19 +88,27 @@
     "name": "Puma",
     "segment": "sportswear",
     "defaultFitType": "regular athletic",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 1,
     "sourceType": "public",
-    "sourceUrl": "",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
-    "dataStatus": "estimated-public-profile"
+    "logoText": "PUM",
+    "dataStatus": "public-reference"
   },
   {
     "id": "uniqlo",
     "name": "Uniqlo",
     "segment": "basics",
     "defaultFitType": "regular basics",
+    "region": "Global",
+    "categoryGroup": "basics",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "https://www.uniqlo.com",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "UNI",
     "dataStatus": "public-reference"
   },
   {
@@ -84,9 +116,13 @@
     "name": "New Balance",
     "segment": "sportswear shoes",
     "defaultFitType": "shoe model dependent",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "https://www.newbalance.com/size-guide.html",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "NEW",
     "dataStatus": "public-reference"
   },
   {
@@ -94,9 +130,13 @@
     "name": "Balenciaga",
     "segment": "luxury streetwear",
     "defaultFitType": "oversized luxury",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "BAL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -104,9 +144,13 @@
     "name": "Louis Vuitton",
     "segment": "luxury",
     "defaultFitType": "luxury model dependent",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "LOU",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -114,9 +158,13 @@
     "name": "Prada",
     "segment": "luxury",
     "defaultFitType": "italian luxury",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "PRA",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -124,9 +172,13 @@
     "name": "Dior",
     "segment": "luxury",
     "defaultFitType": "luxury model dependent",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "DIO",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -134,9 +186,13 @@
     "name": "Levi's",
     "segment": "denim",
     "defaultFitType": "denim fit dependent",
+    "region": "Global",
+    "categoryGroup": "denim",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "https://www.levi.com",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
+    "logoText": "LEV",
     "dataStatus": "public-reference"
   },
   {
@@ -144,9 +200,13 @@
     "name": "Tommy Hilfiger",
     "segment": "premium casual",
     "defaultFitType": "classic regular",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "TOM",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -154,9 +214,13 @@
     "name": "Calvin Klein",
     "segment": "premium casual",
     "defaultFitType": "modern slim/regular",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "CAL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -164,9 +228,13 @@
     "name": "Under Armour",
     "segment": "sportswear",
     "defaultFitType": "athletic slim",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "UND",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -174,9 +242,13 @@
     "name": "Patagonia",
     "segment": "outdoor",
     "defaultFitType": "outdoor regular",
+    "region": "Global",
+    "categoryGroup": "outdoor",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "PAT",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -184,9 +256,13 @@
     "name": "The North Face",
     "segment": "outdoor",
     "defaultFitType": "outdoor regular/relaxed",
+    "region": "Global",
+    "categoryGroup": "outdoor",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "THE",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -194,9 +270,13 @@
     "name": "Jordan",
     "segment": "sportswear",
     "defaultFitType": "athletic streetwear",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "JOR",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -204,39 +284,55 @@
     "name": "Converse",
     "segment": "shoes",
     "defaultFitType": "classic sneaker",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
-    "dataStatus": "estimated-public-profile"
+    "logoText": "CON",
+    "dataStatus": "public-reference"
   },
   {
     "id": "vans",
     "name": "Vans",
     "segment": "shoes",
     "defaultFitType": "classic sneaker",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
-    "dataStatus": "estimated-public-profile"
+    "logoText": "VAN",
+    "dataStatus": "public-reference"
   },
   {
     "id": "birkenstock",
     "name": "Birkenstock",
     "segment": "shoes",
     "defaultFitType": "footbed regular/narrow",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 2,
     "sourceType": "public",
-    "sourceUrl": "",
+    "sourceUrl": "official/public size guide reference",
     "updatedAt": "2026-05-19",
-    "dataStatus": "estimated-public-profile"
+    "logoText": "BIR",
+    "dataStatus": "public-reference"
   },
   {
     "id": "mango",
     "name": "Mango",
     "segment": "fashion",
     "defaultFitType": "fashion regular/slim",
+    "region": "Global",
+    "categoryGroup": "fast-fashion",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "MAN",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -244,9 +340,13 @@
     "name": "Bershka",
     "segment": "fast fashion",
     "defaultFitType": "youth fashion slim",
+    "region": "Global",
+    "categoryGroup": "fast-fashion",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "BER",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -254,9 +354,13 @@
     "name": "Pull&Bear",
     "segment": "fast fashion",
     "defaultFitType": "youth casual",
+    "region": "Global",
+    "categoryGroup": "fast-fashion",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "PUL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -264,9 +368,13 @@
     "name": "Massimo Dutti",
     "segment": "premium fashion",
     "defaultFitType": "tailored regular",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "MAS",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -274,9 +382,13 @@
     "name": "COS",
     "segment": "premium basics",
     "defaultFitType": "relaxed modern",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "COS",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -284,9 +396,13 @@
     "name": "ARKET",
     "segment": "premium basics",
     "defaultFitType": "regular modern",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "ARK",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -294,9 +410,13 @@
     "name": "Lululemon",
     "segment": "athleisure",
     "defaultFitType": "athletic technical",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "LUL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -304,9 +424,13 @@
     "name": "Reebok",
     "segment": "sportswear",
     "defaultFitType": "regular athletic",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "REE",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -314,9 +438,13 @@
     "name": "Fila",
     "segment": "sportswear",
     "defaultFitType": "regular athletic",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "FIL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -324,9 +452,13 @@
     "name": "Superdry",
     "segment": "casual",
     "defaultFitType": "often slim",
+    "region": "Global",
+    "categoryGroup": "casual",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "SUP",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -334,9 +466,13 @@
     "name": "Diesel",
     "segment": "denim premium",
     "defaultFitType": "fashion denim",
+    "region": "Global",
+    "categoryGroup": "denim",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "DIE",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -344,9 +480,13 @@
     "name": "BOSS",
     "segment": "premium",
     "defaultFitType": "modern slim/regular",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "BOS",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -354,9 +494,13 @@
     "name": "Lacoste",
     "segment": "premium casual",
     "defaultFitType": "classic regular",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "LAC",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -364,9 +508,13 @@
     "name": "Stone Island",
     "segment": "premium streetwear",
     "defaultFitType": "regular/slim",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 4,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "STO",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -374,9 +522,13 @@
     "name": "Moncler",
     "segment": "luxury outerwear",
     "defaultFitType": "outerwear model dependent",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "MON",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -384,9 +536,13 @@
     "name": "Celine",
     "segment": "luxury",
     "defaultFitType": "luxury slim/regular",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "CEL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -394,9 +550,13 @@
     "name": "Saint Laurent",
     "segment": "luxury",
     "defaultFitType": "slim luxury",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 5,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "SAI",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -404,9 +564,13 @@
     "name": "Off-White",
     "segment": "luxury streetwear",
     "defaultFitType": "streetwear oversized",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 4,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "OFF",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -414,9 +578,13 @@
     "name": "Palm Angels",
     "segment": "luxury streetwear",
     "defaultFitType": "streetwear relaxed",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 4,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "PAL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -424,9 +592,13 @@
     "name": "Fear of God",
     "segment": "luxury streetwear",
     "defaultFitType": "oversized relaxed",
+    "region": "Global",
+    "categoryGroup": "luxury",
+    "luxuryLevel": 4,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "FEA",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -434,9 +606,13 @@
     "name": "Gymshark",
     "segment": "fitness",
     "defaultFitType": "athletic slim",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "GYM",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -444,9 +620,13 @@
     "name": "SHEIN",
     "segment": "fast fashion",
     "defaultFitType": "product-dependent",
+    "region": "Global",
+    "categoryGroup": "fast-fashion",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "SHE",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -454,9 +634,13 @@
     "name": "C&A",
     "segment": "mass market",
     "defaultFitType": "regular",
+    "region": "Global",
+    "categoryGroup": "mass-market",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "C&A",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -464,9 +648,13 @@
     "name": "Esprit",
     "segment": "casual",
     "defaultFitType": "regular",
+    "region": "Global",
+    "categoryGroup": "casual",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "ESP",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -474,9 +662,13 @@
     "name": "ONLY",
     "segment": "womenswear",
     "defaultFitType": "regular/slim",
+    "region": "Global",
+    "categoryGroup": "womenswear",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "ONL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -484,9 +676,13 @@
     "name": "Vero Moda",
     "segment": "womenswear",
     "defaultFitType": "regular",
+    "region": "Global",
+    "categoryGroup": "womenswear",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "VER",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -494,9 +690,13 @@
     "name": "Jack & Jones",
     "segment": "menswear",
     "defaultFitType": "regular/slim",
+    "region": "Global",
+    "categoryGroup": "menswear",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "JAC",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -504,9 +704,13 @@
     "name": "Selected",
     "segment": "premium casual",
     "defaultFitType": "regular/slim",
+    "region": "Global",
+    "categoryGroup": "premium",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "SEL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -514,9 +718,13 @@
     "name": "Carhartt WIP",
     "segment": "workwear streetwear",
     "defaultFitType": "relaxed",
+    "region": "Global",
+    "categoryGroup": "streetwear",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "CAR",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -524,9 +732,13 @@
     "name": "Dickies",
     "segment": "workwear streetwear",
     "defaultFitType": "relaxed workwear",
+    "region": "Global",
+    "categoryGroup": "streetwear",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "DIC",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -534,9 +746,13 @@
     "name": "Crocs",
     "segment": "shoes",
     "defaultFitType": "roomy fit",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "CRO",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -544,9 +760,13 @@
     "name": "UGG",
     "segment": "shoes",
     "defaultFitType": "boot/slipper dependent",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "UGG",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -554,9 +774,13 @@
     "name": "Skechers",
     "segment": "shoes",
     "defaultFitType": "comfort regular",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "SKE",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -564,9 +788,13 @@
     "name": "Salomon",
     "segment": "outdoor shoes",
     "defaultFitType": "technical footwear",
+    "region": "Global",
+    "categoryGroup": "outdoor",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "SAL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -574,9 +802,13 @@
     "name": "On Running",
     "segment": "running shoes",
     "defaultFitType": "performance shoe dependent",
+    "region": "Global",
+    "categoryGroup": "sportswear",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "ON ",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -584,9 +816,13 @@
     "name": "Veja",
     "segment": "shoes",
     "defaultFitType": "sneaker regular",
+    "region": "Global",
+    "categoryGroup": "shoes",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "VEJ",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -594,9 +830,13 @@
     "name": "Abercrombie & Fitch",
     "segment": "casual",
     "defaultFitType": "regular/slim",
+    "region": "Global",
+    "categoryGroup": "casual",
+    "luxuryLevel": 2,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "ABE",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -604,9 +844,13 @@
     "name": "Hollister",
     "segment": "casual",
     "defaultFitType": "youth slim/regular",
+    "region": "Global",
+    "categoryGroup": "casual",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "HOL",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -614,9 +858,13 @@
     "name": "American Eagle",
     "segment": "casual denim",
     "defaultFitType": "regular denim",
+    "region": "Global",
+    "categoryGroup": "denim",
+    "luxuryLevel": 1,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "AME",
     "dataStatus": "estimated-public-profile"
   },
   {
@@ -624,9 +872,13 @@
     "name": "Aritzia",
     "segment": "womenswear",
     "defaultFitType": "modern womenswear",
+    "region": "Global",
+    "categoryGroup": "womenswear",
+    "luxuryLevel": 3,
     "sourceType": "public",
     "sourceUrl": "",
     "updatedAt": "2026-05-19",
+    "logoText": "ARI",
     "dataStatus": "estimated-public-profile"
   }
 ]

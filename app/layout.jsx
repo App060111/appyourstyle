@@ -1,16 +1,3 @@
 import './globals.css';
-
-export const metadata = {
-  title: 'AppYourStyle — Fashion Size Intelligence',
-  description: 'Google Translate für Fashiongrößen. Marken, Fits, Schuhe, Babygrößen und internationale Größenlogik.',
-  metadataBase: new URL('https://appyourstyle.com'),
-  openGraph: {
-    title: 'AppYourStyle — Fashion Size Intelligence',
-    description: 'Google Translate für Fashiongrößen.',
-    type: 'website'
-  }
-};
-
-export default function RootLayout({ children }) {
-  return <html lang="de"><body>{children}</body></html>;
-}
+export const metadata={title:'AppYourStyle — Universal Fashion Size Intelligence',description:'Universal Fashion Size Intelligence für Marken, Größen, Fits, Schuhe, Babygrößen und internationale Standards.',metadataBase:new URL('https://appyourstyle.com')};
+export default function RootLayout({children}){return <html lang="de"><body>{children}</body></html>}
