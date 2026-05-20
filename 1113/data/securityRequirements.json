@@ -1,0 +1,20 @@
+{
+  "links": [
+    "HTTPS only",
+    "URL sanitizing",
+    "SSRF guard",
+    "no internal IP ranges"
+  ],
+  "uploads": [
+    "size limits",
+    "MIME check",
+    "consent",
+    "delete logic"
+  ],
+  "ai": [
+    "AI label",
+    "uncertainty",
+    "rate limits",
+    "abuse protection"
+  ]
+}

@@ -1,0 +1,228 @@
+[
+  {
+    "id": "nike",
+    "name": "Nike",
+    "aliases": [
+      "nike"
+    ],
+    "segment": "Sportswear",
+    "region": "US/Global",
+    "fit": "athletic regular",
+    "sourceType": "public",
+    "confidence": 0.78
+  },
+  {
+    "id": "adidas",
+    "name": "Adidas",
+    "aliases": [
+      "adidas"
+    ],
+    "segment": "Sportswear",
+    "region": "EU/Global",
+    "fit": "regular athletic",
+    "sourceType": "public",
+    "confidence": 0.78
+  },
+  {
+    "id": "zara",
+    "name": "Zara",
+    "aliases": [
+      "zara"
+    ],
+    "segment": "Fast Fashion",
+    "region": "EU/Global",
+    "fit": "fashion slim/regular",
+    "sourceType": "public",
+    "confidence": 0.68
+  },
+  {
+    "id": "hm",
+    "name": "H&M",
+    "aliases": [
+      "hm",
+      "h&m",
+      "hennes"
+    ],
+    "segment": "Fast Fashion",
+    "region": "EU/Global",
+    "fit": "regular/product dependent",
+    "sourceType": "public",
+    "confidence": 0.66
+  },
+  {
+    "id": "boss",
+    "name": "BOSS / Hugo Boss",
+    "aliases": [
+      "boss",
+      "hugo boss",
+      "hugoboss",
+      "hugo"
+    ],
+    "segment": "Premium",
+    "region": "EU/Global",
+    "fit": "modern slim/regular",
+    "sourceType": "estimated",
+    "confidence": 0.6
+  },
+  {
+    "id": "lloyd",
+    "name": "Lloyd",
+    "aliases": [
+      "lloyd",
+      "loyd"
+    ],
+    "segment": "Formal Shoes",
+    "region": "EU",
+    "fit": "classic leather shoe",
+    "sourceType": "public",
+    "confidence": 0.7
+  },
+  {
+    "id": "hoka",
+    "name": "Hoka",
+    "aliases": [
+      "hoka",
+      "hoka one one"
+    ],
+    "segment": "Running Shoes",
+    "region": "Global",
+    "fit": "performance running",
+    "sourceType": "public",
+    "confidence": 0.72
+  },
+  {
+    "id": "asics",
+    "name": "ASICS",
+    "aliases": [
+      "asics"
+    ],
+    "segment": "Running Shoes",
+    "region": "JP/Global",
+    "fit": "performance running",
+    "sourceType": "public",
+    "confidence": 0.72
+  },
+  {
+    "id": "newbalance",
+    "name": "New Balance",
+    "aliases": [
+      "new balance",
+      "nb",
+      "newbalance"
+    ],
+    "segment": "Sneakers",
+    "region": "US/Global",
+    "fit": "model dependent",
+    "sourceType": "public",
+    "confidence": 0.72
+  },
+  {
+    "id": "temu",
+    "name": "Temu",
+    "aliases": [
+      "temu"
+    ],
+    "segment": "Marketplace",
+    "region": "CN/Global",
+    "fit": "seller/product dependent",
+    "sourceType": "estimated",
+    "confidence": 0.42
+  },
+  {
+    "id": "aliexpress",
+    "name": "AliExpress",
+    "aliases": [
+      "aliexpress",
+      "ali express"
+    ],
+    "segment": "Marketplace",
+    "region": "CN/Global",
+    "fit": "seller/product dependent",
+    "sourceType": "estimated",
+    "confidence": 0.4
+  },
+  {
+    "id": "alibaba",
+    "name": "Alibaba",
+    "aliases": [
+      "alibaba"
+    ],
+    "segment": "Marketplace",
+    "region": "CN/Global",
+    "fit": "supplier dependent",
+    "sourceType": "estimated",
+    "confidence": 0.38
+  },
+  {
+    "id": "shein",
+    "name": "SHEIN",
+    "aliases": [
+      "shein"
+    ],
+    "segment": "Marketplace Fashion",
+    "region": "CN/Global",
+    "fit": "product dependent",
+    "sourceType": "estimated",
+    "confidence": 0.48
+  },
+  {
+    "id": "gucci",
+    "name": "Gucci",
+    "aliases": [
+      "gucci"
+    ],
+    "segment": "Luxury",
+    "region": "IT/Global",
+    "fit": "italian luxury",
+    "sourceType": "public",
+    "confidence": 0.66
+  },
+  {
+    "id": "prada",
+    "name": "Prada",
+    "aliases": [
+      "prada"
+    ],
+    "segment": "Luxury",
+    "region": "IT/Global",
+    "fit": "italian luxury",
+    "sourceType": "estimated",
+    "confidence": 0.58
+  },
+  {
+    "id": "birkenstock",
+    "name": "Birkenstock",
+    "aliases": [
+      "birkenstock"
+    ],
+    "segment": "Shoes",
+    "region": "EU/Global",
+    "fit": "regular/narrow footbed",
+    "sourceType": "public",
+    "confidence": 0.74
+  },
+  {
+    "id": "crocs",
+    "name": "Crocs",
+    "aliases": [
+      "crocs"
+    ],
+    "segment": "Shoes",
+    "region": "US/Global",
+    "fit": "roomy fit",
+    "sourceType": "public",
+    "confidence": 0.7
+  },
+  {
+    "id": "uniqlo",
+    "name": "Uniqlo",
+    "aliases": [
+      "uniqlo"
+    ],
+    "segment": "Basics",
+    "region": "JP/Global",
+    "fit": "regular basics",
+    "sourceType": "public",
+    "confidence": 0.68
+  }
+]

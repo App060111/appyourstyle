@@ -1,0 +1,1 @@
+OpenAI/GPT-5: Text/Fit-Erklärung; Claude: Review; Gemini: Vision; Replicate: Outfit Image; Pinecone: Vector; Algolia: Suche; LangChain: Workflows; Cloudflare Images: Bild-CDN; Vercel AI SDK: Next.js AI UI.
