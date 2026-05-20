@@ -1,18 +1,17 @@
-# AppYourStyle — Phase 3 True Data Intelligence
+# AppYourStyle — Phase 5 Real AI Infrastructure
 
-Diese Version geht über Phase 1–2 hinaus und ergänzt echte Data-Intelligence-Foundation:
+Provider-Entscheidung:
+- Text / Fit-Erklärung: OpenAI primary
+- Vision / Screenshot: Gemini Flash primary
+- Vector Search: Pinecone primary
+- Image Preview: Replicate FLUX primary
+- Eigene GPU: NICHT jetzt, erst später bei Skalierung
 
-- klickbare Trust-/Info-Pills
-- funktionierende Expandable Sections
-- Fit-DNA-Datenbank
-- probabilistische Confidence Engine
-- Marketplace Risk Engine
-- Material-/Kategorie-/Region-Logik
-- bessere Outfit-Auswertung
-- AI Provider Layer als modularer Architekturplan
-- sichtbares Impressum/Footer
-- mobile Safe-Area Fixes
-- keine toten Trust-Elemente
+Ohne API Keys läuft alles sicher im Mock-Modus.
+Mit API Keys werden echte Provider aktiviert.
 
-Upload:
-ZIP entpacken → Inhalte in GitHub hochladen → Commit → Vercel deployed automatisch.
+## Anmeldung / API Keys
+Siehe `docs/API_SIGNUP_GUIDE.md`.
+
+## Upload
+ZIP entpacken → Inhalte direkt ins GitHub Root laden → Commit → Vercel deployed automatisch.

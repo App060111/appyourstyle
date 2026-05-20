@@ -1,0 +1,1 @@
+import{geminiVisionAnalyze}from'../../../../lib/ai/gemini';export async function POST(req){const body=await req.json();const result=await geminiVisionAnalyze({imageBase64:body.imageBase64,prompt:body.prompt});return Response.json(result)}

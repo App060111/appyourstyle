@@ -1,6 +1,6 @@
 {
-  "name": "appyourstyle-phase-3-true-data-intelligence",
-  "version": "6.0.0",
+  "name": "appyourstyle-phase-5-real-ai-infrastructure",
+  "version": "8.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",
@@ -10,6 +10,11 @@
   "dependencies": {
     "next": "14.2.5",
     "react": "18.3.1",
-    "react-dom": "18.3.1"
+    "react-dom": "18.3.1",
+    "openai": "^4.104.0",
+    "@google/generative-ai": "^0.24.1",
+    "@pinecone-database/pinecone": "^3.0.0",
+    "replicate": "^0.35.0",
+    "cheerio": "^1.0.0"
   }
 }

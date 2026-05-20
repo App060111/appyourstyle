@@ -54,7 +54,7 @@
     ],
     "segment": "Fast Fashion",
     "region": "EU/Global",
-    "fit": "regular / product dependent",
+    "fit": "regular/product dependent",
     "sourceType": "public",
     "baseConfidence": 0.66,
     "fitOffset": 0,
@@ -72,7 +72,7 @@
     ],
     "segment": "Premium",
     "region": "EU/Global",
-    "fit": "modern slim / regular",
+    "fit": "modern slim/regular",
     "sourceType": "estimated",
     "baseConfidence": 0.6,
     "fitOffset": 1,
@@ -190,21 +190,6 @@
     "risk": "high"
   },
   {
-    "id": "taobao",
-    "name": "Taobao",
-    "aliases": [
-      "taobao"
-    ],
-    "segment": "Marketplace",
-    "region": "CN",
-    "fit": "seller/product dependent",
-    "sourceType": "estimated",
-    "baseConfidence": 0.39,
-    "fitOffset": 1,
-    "width": "unknown",
-    "risk": "high"
-  },
-  {
     "id": "shein",
     "name": "SHEIN",
     "aliases": [
@@ -230,21 +215,6 @@
     "fit": "italian luxury",
     "sourceType": "public",
     "baseConfidence": 0.66,
-    "fitOffset": 0,
-    "width": "regular",
-    "risk": "medium"
-  },
-  {
-    "id": "prada",
-    "name": "Prada",
-    "aliases": [
-      "prada"
-    ],
-    "segment": "Luxury",
-    "region": "IT/Global",
-    "fit": "italian luxury",
-    "sourceType": "estimated",
-    "baseConfidence": 0.58,
     "fitOffset": 0,
     "width": "regular",
     "risk": "medium"
@@ -278,99 +248,5 @@
     "fitOffset": -1,
     "width": "roomy",
     "risk": "low"
-  },
-  {
-    "id": "uniqlo",
-    "name": "Uniqlo",
-    "aliases": [
-      "uniqlo"
-    ],
-    "segment": "Basics",
-    "region": "JP/Global",
-    "fit": "regular basics",
-    "sourceType": "public",
-    "baseConfidence": 0.68,
-    "fitOffset": 0,
-    "width": "regular",
-    "risk": "medium"
-  },
-  {
-    "id": "puma",
-    "name": "Puma",
-    "aliases": [
-      "puma"
-    ],
-    "segment": "Sportswear",
-    "region": "EU/Global",
-    "fit": "regular athletic",
-    "sourceType": "public",
-    "baseConfidence": 0.7,
-    "fitOffset": 0,
-    "width": "regular",
-    "risk": "low"
-  },
-  {
-    "id": "onrunning",
-    "name": "On Running",
-    "aliases": [
-      "on",
-      "on running",
-      "onrunning"
-    ],
-    "segment": "Running Shoes",
-    "region": "CH/Global",
-    "fit": "technical running",
-    "sourceType": "public",
-    "baseConfidence": 0.7,
-    "fitOffset": 0,
-    "width": "regular-narrow",
-    "risk": "low"
-  },
-  {
-    "id": "salomon",
-    "name": "Salomon",
-    "aliases": [
-      "salomon"
-    ],
-    "segment": "Outdoor Shoes",
-    "region": "FR/Global",
-    "fit": "technical outdoor",
-    "sourceType": "public",
-    "baseConfidence": 0.7,
-    "fitOffset": 0,
-    "width": "regular-narrow",
-    "risk": "low"
-  },
-  {
-    "id": "clarks",
-    "name": "Clarks",
-    "aliases": [
-      "clarks"
-    ],
-    "segment": "Shoes",
-    "region": "UK/Global",
-    "fit": "comfort regular",
-    "sourceType": "public",
-    "baseConfidence": 0.69,
-    "fitOffset": 0,
-    "width": "regular",
-    "risk": "low"
-  },
-  {
-    "id": "drmartens",
-    "name": "Dr. Martens",
-    "aliases": [
-      "dr martens",
-      "drmartens",
-      "doc martens"
-    ],
-    "segment": "Boots",
-    "region": "UK/Global",
-    "fit": "boot regular",
-    "sourceType": "public",
-    "baseConfidence": 0.67,
-    "fitOffset": 0,
-    "width": "regular-wide feel",
-    "risk": "medium"
   }
 ]

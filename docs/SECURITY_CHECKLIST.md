@@ -1,1 +1,1 @@
-SSRF, URL-Sanitizing, HTTPS-only, keine internen IPs, Rate Limiting, Upload-Limits, MIME-Type, Consent, Löschlogik, DSGVO-konforme Logs.
+HTTPS-only, SSRF Guard, keine privaten IPs, API Keys nur in Vercel Environment Variables, Mock-Fallback ohne Keys.

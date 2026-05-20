@@ -1,0 +1,9 @@
+{
+  "decision": "cost_safe_startup_stack",
+  "openai": "primary for text, fit explanations, conversational search",
+  "gemini": "primary for low-cost/fast vision parsing",
+  "pinecone": "primary for managed vector search",
+  "replicate": "primary for image generation; no own GPU at this stage",
+  "fallback": "mock mode if no keys are configured",
+  "reason": "Minimiert Infrastrukturkomplexität, hält Kosten kontrollierbar und gefährdet das Ziel der schnellen Nutzerplattform nicht."
+}
