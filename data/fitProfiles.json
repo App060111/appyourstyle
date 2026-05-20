@@ -3,630 +3,504 @@
     "brandId": "nike",
     "fitType": "athletic regular",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
   },
   "adidas": {
     "brandId": "adidas",
     "fitType": "regular athletic",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
   },
   "zara": {
     "brandId": "zara",
     "fitType": "fashion slim/regular",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "fast fashion · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.74,
+    "tendency": "fällt tendenziell kleiner/schmaler aus",
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
   },
   "hm": {
     "brandId": "hm",
     "fitType": "regular",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "fast fashion · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
   },
   "asos": {
     "brandId": "asos",
     "fitType": "product-dependent",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "marketplace · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
-    "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
   "gucci": {
     "brandId": "gucci",
     "fitType": "italian luxury",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
-    "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "puma": {
-    "brandId": "puma",
-    "fitType": "regular athletic",
+  "lloyd": {
+    "brandId": "lloyd",
+    "fitType": "classic leather shoe",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
   },
-  "uniqlo": {
-    "brandId": "uniqlo",
-    "fitType": "regular basics",
+  "clarks": {
+    "brandId": "clarks",
+    "fitType": "comfort regular",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "basics · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "drmartens": {
+    "brandId": "drmartens",
+    "fitType": "boot fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "timberland": {
+    "brandId": "timberland",
+    "fitType": "boot regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "ralphlauren": {
+    "brandId": "ralphlauren",
+    "fitType": "classic regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "brunellocucinelli": {
+    "brandId": "brunellocucinelli",
+    "fitType": "luxury tailored",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "zegna": {
+    "brandId": "zegna",
+    "fitType": "tailored luxury",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "canadagoose": {
+    "brandId": "canadagoose",
+    "fitType": "outerwear regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "arcteryx": {
+    "brandId": "arcteryx",
+    "fitType": "technical outdoor",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "columbia": {
+    "brandId": "columbia",
+    "fitType": "regular outdoor",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "saucony": {
+    "brandId": "saucony",
+    "fitType": "running fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "brooks": {
+    "brandId": "brooks",
+    "fitType": "running fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "mizuno": {
+    "brandId": "mizuno",
+    "fitType": "performance fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "hoka": {
+    "brandId": "hoka",
+    "fitType": "performance running",
+    "tendency": "meist regulär oder produktabhängig",
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
+  },
+  "asics": {
+    "brandId": "asics",
+    "fitType": "performance running",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "public",
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
+  },
+  "oakley": {
+    "brandId": "oakley",
+    "fitType": "eyewear fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "rayban": {
+    "brandId": "rayban",
+    "fitType": "eyewear fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "valentino": {
+    "brandId": "valentino",
+    "fitType": "italian luxury",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "givenchy": {
+    "brandId": "givenchy",
+    "fitType": "french luxury",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "kenzo": {
+    "brandId": "kenzo",
+    "fitType": "designer regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "acnestudios": {
+    "brandId": "acnestudios",
+    "fitType": "scandinavian oversized/regular",
+    "tendency": "fällt tendenziell weiter/lockerer aus",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "maisonmargiela": {
+    "brandId": "maisonmargiela",
+    "fitType": "avant-garde fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "amiparis": {
+    "brandId": "amiparis",
+    "fitType": "modern relaxed",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "rickowens": {
+    "brandId": "rickowens",
+    "fitType": "avant-garde oversized/slim",
+    "tendency": "fällt tendenziell weiter/lockerer aus",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "bape": {
+    "brandId": "bape",
+    "fitType": "streetwear regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "supreme": {
+    "brandId": "supreme",
+    "fitType": "streetwear regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "stussy": {
+    "brandId": "stussy",
+    "fitType": "relaxed streetwear",
+    "tendency": "fällt tendenziell weiter/lockerer aus",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "yeezy": {
+    "brandId": "yeezy",
+    "fitType": "sneaker model dependent",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "axelarigato": {
+    "brandId": "axelarigato",
+    "fitType": "luxury sneaker regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "fillingpieces": {
+    "brandId": "fillingpieces",
+    "fitType": "luxury sneaker regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "commonprojects": {
+    "brandId": "commonprojects",
+    "fitType": "luxury sneaker slim",
+    "tendency": "fällt tendenziell kleiner/schmaler aus",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "goldengoose": {
+    "brandId": "goldengoose",
+    "fitType": "luxury sneaker regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "loewe": {
+    "brandId": "loewe",
+    "fitType": "luxury fashion fit",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "casablanca": {
+    "brandId": "casablanca",
+    "fitType": "luxury relaxed",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "jacquemus": {
+    "brandId": "jacquemus",
+    "fitType": "french designer slim/regular",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
   "newbalance": {
     "brandId": "newbalance",
-    "fitType": "shoe model dependent",
+    "fitType": "model dependent",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
-  },
-  "balenciaga": {
-    "brandId": "balenciaga",
-    "fitType": "oversized luxury",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury streetwear · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "louisvuitton": {
-    "brandId": "louisvuitton",
-    "fitType": "luxury model dependent",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "prada": {
-    "brandId": "prada",
-    "fitType": "italian luxury",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "dior": {
-    "brandId": "dior",
-    "fitType": "luxury model dependent",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "levis": {
-    "brandId": "levis",
-    "fitType": "denim fit dependent",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "denim · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
-    "sourceType": "public",
-    "updatedAt": "2026-05-19"
-  },
-  "tommyhilfiger": {
-    "brandId": "tommyhilfiger",
-    "fitType": "classic regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium casual · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "calvinklein": {
-    "brandId": "calvinklein",
-    "fitType": "modern slim/regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium casual · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "underarmour": {
-    "brandId": "underarmour",
-    "fitType": "athletic slim",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "patagonia": {
-    "brandId": "patagonia",
-    "fitType": "outdoor regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "outdoor · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "thenorthface": {
-    "brandId": "thenorthface",
-    "fitType": "outdoor regular/relaxed",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "outdoor · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "jordan": {
-    "brandId": "jordan",
-    "fitType": "athletic streetwear",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "converse": {
-    "brandId": "converse",
-    "fitType": "classic sneaker",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
-    "sourceType": "public",
-    "updatedAt": "2026-05-19"
-  },
-  "vans": {
-    "brandId": "vans",
-    "fitType": "classic sneaker",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
-    "sourceType": "public",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
   },
   "birkenstock": {
     "brandId": "birkenstock",
     "fitType": "footbed regular/narrow",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.74,
     "sourceType": "public",
-    "updatedAt": "2026-05-19"
-  },
-  "mango": {
-    "brandId": "mango",
-    "fitType": "fashion regular/slim",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "fashion · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "bershka": {
-    "brandId": "bershka",
-    "fitType": "youth fashion slim",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "fast fashion · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "pullandbear": {
-    "brandId": "pullandbear",
-    "fitType": "youth casual",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "fast fashion · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "massimodutti": {
-    "brandId": "massimodutti",
-    "fitType": "tailored regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium fashion · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "cos": {
-    "brandId": "cos",
-    "fitType": "relaxed modern",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium basics · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "arket": {
-    "brandId": "arket",
-    "fitType": "regular modern",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium basics · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "lululemon": {
-    "brandId": "lululemon",
-    "fitType": "athletic technical",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "athleisure · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "reebok": {
-    "brandId": "reebok",
-    "fitType": "regular athletic",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "fila": {
-    "brandId": "fila",
-    "fitType": "regular athletic",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "sportswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "superdry": {
-    "brandId": "superdry",
-    "fitType": "often slim",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "casual · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "diesel": {
-    "brandId": "diesel",
-    "fitType": "fashion denim",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "denim premium · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "boss": {
-    "brandId": "boss",
-    "fitType": "modern slim/regular",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "lacoste": {
-    "brandId": "lacoste",
-    "fitType": "classic regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium casual · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "stoneisland": {
-    "brandId": "stoneisland",
-    "fitType": "regular/slim",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium streetwear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "moncler": {
-    "brandId": "moncler",
-    "fitType": "outerwear model dependent",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury outerwear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "celine": {
-    "brandId": "celine",
-    "fitType": "luxury slim/regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "saintlaurent": {
-    "brandId": "saintlaurent",
-    "fitType": "slim luxury",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "offwhite": {
-    "brandId": "offwhite",
-    "fitType": "streetwear oversized",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury streetwear · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "palmangels": {
-    "brandId": "palmangels",
-    "fitType": "streetwear relaxed",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury streetwear · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "fearofgod": {
-    "brandId": "fearofgod",
-    "fitType": "oversized relaxed",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "luxury streetwear · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "gymshark": {
-    "brandId": "gymshark",
-    "fitType": "athletic slim",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "fitness · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "shein": {
-    "brandId": "shein",
-    "fitType": "product-dependent",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "fast fashion · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "ca": {
-    "brandId": "ca",
-    "fitType": "regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "mass market · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "esprit": {
-    "brandId": "esprit",
-    "fitType": "regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "casual · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "only": {
-    "brandId": "only",
-    "fitType": "regular/slim",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "womenswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "veromoda": {
-    "brandId": "veromoda",
-    "fitType": "regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "womenswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "jackandjones": {
-    "brandId": "jackandjones",
-    "fitType": "regular/slim",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "menswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "selected": {
-    "brandId": "selected",
-    "fitType": "regular/slim",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "premium casual · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "carhartt": {
-    "brandId": "carhartt",
-    "fitType": "relaxed",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "workwear streetwear · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "dickies": {
-    "brandId": "dickies",
-    "fitType": "relaxed workwear",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "workwear streetwear · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.76,
+    "updatedAt": "2026-05-20"
   },
   "crocs": {
     "brandId": "crocs",
     "fitType": "roomy fit",
-    "tendency": "fällt häufig lockerer/weiter aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "shoes · fällt häufig lockerer/weiter aus",
-    "confidenceScore": 0.6,
+    "tendency": "fällt tendenziell weiter/lockerer aus",
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "ugg": {
-    "brandId": "ugg",
-    "fitType": "boot/slipper dependent",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
+  "shein": {
+    "brandId": "shein",
+    "fitType": "seller/product dependent",
+    "tendency": "stark seller-/produktabhängig",
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "skechers": {
-    "brandId": "skechers",
-    "fitType": "comfort regular",
-    "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
+  "temu": {
+    "brandId": "temu",
+    "fitType": "seller/product dependent",
+    "tendency": "stark seller-/produktabhängig",
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "aliexpress": {
+    "brandId": "aliexpress",
+    "fitType": "seller/product dependent",
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "taobao": {
+    "brandId": "taobao",
+    "fitType": "seller/product dependent",
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "alibaba": {
+    "brandId": "alibaba",
+    "fitType": "supplier dependent",
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "dhgate": {
+    "brandId": "dhgate",
+    "fitType": "seller dependent",
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "amazonfashion": {
+    "brandId": "amazonfashion",
+    "fitType": "seller/product dependent",
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "zalando": {
+    "brandId": "zalando",
+    "fitType": "brand dependent",
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "farfetch": {
+    "brandId": "farfetch",
+    "fitType": "brand dependent",
+    "tendency": "stark seller-/produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "uniqlo": {
+    "brandId": "uniqlo",
+    "fitType": "regular basics",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "puma": {
+    "brandId": "puma",
+    "fitType": "regular athletic",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "onrunning": {
+    "brandId": "onrunning",
+    "fitType": "performance shoe",
+    "tendency": "meist regulär oder produktabhängig",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
   "salomon": {
     "brandId": "salomon",
     "fitType": "technical footwear",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "outdoor shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "onrunning": {
-    "brandId": "onrunning",
-    "fitType": "performance shoe dependent",
+  "converse": {
+    "brandId": "converse",
+    "fitType": "classic sneaker",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "running shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "veja": {
-    "brandId": "veja",
-    "fitType": "sneaker regular",
+  "vans": {
+    "brandId": "vans",
+    "fitType": "classic sneaker",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "shoes · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "abercrombie": {
-    "brandId": "abercrombie",
-    "fitType": "regular/slim",
+  "jordan": {
+    "brandId": "jordan",
+    "fitType": "athletic streetwear",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "casual · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "hollister": {
-    "brandId": "hollister",
-    "fitType": "youth slim/regular",
-    "tendency": "fällt häufig kleiner/schmaler aus",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "casual · fällt häufig kleiner/schmaler aus",
-    "confidenceScore": 0.6,
-    "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
-  },
-  "americaneagle": {
-    "brandId": "americaneagle",
-    "fitType": "regular denim",
+  "prada": {
+    "brandId": "prada",
+    "fitType": "italian luxury",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "hoch",
-    "fitIdentity": "casual denim · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   },
-  "aritzia": {
-    "brandId": "aritzia",
-    "fitType": "modern womenswear",
+  "dior": {
+    "brandId": "dior",
+    "fitType": "luxury fit",
     "tendency": "meist regulär oder produktabhängig",
-    "fabricSensitivity": "mittel",
-    "fitIdentity": "womenswear · meist regulär oder produktabhängig",
-    "confidenceScore": 0.6,
     "sourceType": "estimated",
-    "updatedAt": "2026-05-19"
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
+  },
+  "balenciaga": {
+    "brandId": "balenciaga",
+    "fitType": "oversized luxury",
+    "tendency": "fällt tendenziell weiter/lockerer aus",
+    "sourceType": "estimated",
+    "confidenceScore": 0.55,
+    "updatedAt": "2026-05-20"
   }
 }

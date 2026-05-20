@@ -1,1 +1,1 @@
-import Header from '../../components/Header';import Footer from '../../components/Footer';export default function Contact(){return <main className='container'><Header/><section className='legal'><h1>Kontakt</h1><p>E-Mail: hello@appyourstyle.com</p></section><Footer/></main>}
+import Header from'../../components/Header';import Footer from'../../components/Footer';export default function Contact(){return <main className='container'><Header/><section className='legal'><h1>Kontakt</h1><p>E-Mail: hello@appyourstyle.com</p></section><Footer/></main>}
