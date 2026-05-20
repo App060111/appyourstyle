@@ -1,0 +1,376 @@
+[
+  {
+    "id": "nike",
+    "name": "Nike",
+    "aliases": [
+      "nike"
+    ],
+    "segment": "Sportswear",
+    "region": "US/Global",
+    "fit": "athletic regular",
+    "sourceType": "public",
+    "baseConfidence": 0.79,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "low"
+  },
+  {
+    "id": "adidas",
+    "name": "Adidas",
+    "aliases": [
+      "adidas"
+    ],
+    "segment": "Sportswear",
+    "region": "EU/Global",
+    "fit": "regular athletic",
+    "sourceType": "public",
+    "baseConfidence": 0.79,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "low"
+  },
+  {
+    "id": "zara",
+    "name": "Zara",
+    "aliases": [
+      "zara"
+    ],
+    "segment": "Fast Fashion",
+    "region": "EU/Global",
+    "fit": "fashion slim/regular",
+    "sourceType": "public",
+    "baseConfidence": 0.68,
+    "fitOffset": 1,
+    "width": "regular-slim",
+    "risk": "medium"
+  },
+  {
+    "id": "hm",
+    "name": "H&M",
+    "aliases": [
+      "hm",
+      "h&m",
+      "hennes"
+    ],
+    "segment": "Fast Fashion",
+    "region": "EU/Global",
+    "fit": "regular / product dependent",
+    "sourceType": "public",
+    "baseConfidence": 0.66,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "medium"
+  },
+  {
+    "id": "boss",
+    "name": "BOSS / Hugo Boss",
+    "aliases": [
+      "boss",
+      "hugo boss",
+      "hugoboss",
+      "hugo"
+    ],
+    "segment": "Premium",
+    "region": "EU/Global",
+    "fit": "modern slim / regular",
+    "sourceType": "estimated",
+    "baseConfidence": 0.6,
+    "fitOffset": 1,
+    "width": "regular-slim",
+    "risk": "medium"
+  },
+  {
+    "id": "lloyd",
+    "name": "Lloyd",
+    "aliases": [
+      "lloyd",
+      "loyd"
+    ],
+    "segment": "Formal Shoes",
+    "region": "EU",
+    "fit": "classic leather shoe",
+    "sourceType": "public",
+    "baseConfidence": 0.72,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "low"
+  },
+  {
+    "id": "hoka",
+    "name": "Hoka",
+    "aliases": [
+      "hoka",
+      "hoka one one"
+    ],
+    "segment": "Running Shoes",
+    "region": "Global",
+    "fit": "performance running cushioned",
+    "sourceType": "public",
+    "baseConfidence": 0.73,
+    "fitOffset": 0,
+    "width": "regular-wide feel",
+    "risk": "low"
+  },
+  {
+    "id": "asics",
+    "name": "ASICS",
+    "aliases": [
+      "asics"
+    ],
+    "segment": "Running Shoes",
+    "region": "JP/Global",
+    "fit": "performance running",
+    "sourceType": "public",
+    "baseConfidence": 0.73,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "low"
+  },
+  {
+    "id": "newbalance",
+    "name": "New Balance",
+    "aliases": [
+      "new balance",
+      "nb",
+      "newbalance"
+    ],
+    "segment": "Sneakers",
+    "region": "US/Global",
+    "fit": "model dependent",
+    "sourceType": "public",
+    "baseConfidence": 0.72,
+    "fitOffset": 0,
+    "width": "multiple widths",
+    "risk": "low"
+  },
+  {
+    "id": "temu",
+    "name": "Temu",
+    "aliases": [
+      "temu"
+    ],
+    "segment": "Marketplace",
+    "region": "CN/Global",
+    "fit": "seller/product dependent",
+    "sourceType": "estimated",
+    "baseConfidence": 0.42,
+    "fitOffset": 1,
+    "width": "unknown",
+    "risk": "high"
+  },
+  {
+    "id": "aliexpress",
+    "name": "AliExpress",
+    "aliases": [
+      "aliexpress",
+      "ali express"
+    ],
+    "segment": "Marketplace",
+    "region": "CN/Global",
+    "fit": "seller/product dependent",
+    "sourceType": "estimated",
+    "baseConfidence": 0.4,
+    "fitOffset": 1,
+    "width": "unknown",
+    "risk": "high"
+  },
+  {
+    "id": "alibaba",
+    "name": "Alibaba",
+    "aliases": [
+      "alibaba"
+    ],
+    "segment": "Marketplace",
+    "region": "CN/Global",
+    "fit": "supplier dependent",
+    "sourceType": "estimated",
+    "baseConfidence": 0.38,
+    "fitOffset": 1,
+    "width": "unknown",
+    "risk": "high"
+  },
+  {
+    "id": "taobao",
+    "name": "Taobao",
+    "aliases": [
+      "taobao"
+    ],
+    "segment": "Marketplace",
+    "region": "CN",
+    "fit": "seller/product dependent",
+    "sourceType": "estimated",
+    "baseConfidence": 0.39,
+    "fitOffset": 1,
+    "width": "unknown",
+    "risk": "high"
+  },
+  {
+    "id": "shein",
+    "name": "SHEIN",
+    "aliases": [
+      "shein"
+    ],
+    "segment": "Marketplace Fashion",
+    "region": "CN/Global",
+    "fit": "product dependent slim/regular",
+    "sourceType": "estimated",
+    "baseConfidence": 0.49,
+    "fitOffset": 1,
+    "width": "regular-slim",
+    "risk": "high"
+  },
+  {
+    "id": "gucci",
+    "name": "Gucci",
+    "aliases": [
+      "gucci"
+    ],
+    "segment": "Luxury",
+    "region": "IT/Global",
+    "fit": "italian luxury",
+    "sourceType": "public",
+    "baseConfidence": 0.66,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "medium"
+  },
+  {
+    "id": "prada",
+    "name": "Prada",
+    "aliases": [
+      "prada"
+    ],
+    "segment": "Luxury",
+    "region": "IT/Global",
+    "fit": "italian luxury",
+    "sourceType": "estimated",
+    "baseConfidence": 0.58,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "medium"
+  },
+  {
+    "id": "birkenstock",
+    "name": "Birkenstock",
+    "aliases": [
+      "birkenstock"
+    ],
+    "segment": "Shoes",
+    "region": "EU/Global",
+    "fit": "regular/narrow footbed",
+    "sourceType": "public",
+    "baseConfidence": 0.75,
+    "fitOffset": 0,
+    "width": "regular/narrow",
+    "risk": "low"
+  },
+  {
+    "id": "crocs",
+    "name": "Crocs",
+    "aliases": [
+      "crocs"
+    ],
+    "segment": "Shoes",
+    "region": "US/Global",
+    "fit": "roomy fit",
+    "sourceType": "public",
+    "baseConfidence": 0.71,
+    "fitOffset": -1,
+    "width": "roomy",
+    "risk": "low"
+  },
+  {
+    "id": "uniqlo",
+    "name": "Uniqlo",
+    "aliases": [
+      "uniqlo"
+    ],
+    "segment": "Basics",
+    "region": "JP/Global",
+    "fit": "regular basics",
+    "sourceType": "public",
+    "baseConfidence": 0.68,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "medium"
+  },
+  {
+    "id": "puma",
+    "name": "Puma",
+    "aliases": [
+      "puma"
+    ],
+    "segment": "Sportswear",
+    "region": "EU/Global",
+    "fit": "regular athletic",
+    "sourceType": "public",
+    "baseConfidence": 0.7,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "low"
+  },
+  {
+    "id": "onrunning",
+    "name": "On Running",
+    "aliases": [
+      "on",
+      "on running",
+      "onrunning"
+    ],
+    "segment": "Running Shoes",
+    "region": "CH/Global",
+    "fit": "technical running",
+    "sourceType": "public",
+    "baseConfidence": 0.7,
+    "fitOffset": 0,
+    "width": "regular-narrow",
+    "risk": "low"
+  },
+  {
+    "id": "salomon",
+    "name": "Salomon",
+    "aliases": [
+      "salomon"
+    ],
+    "segment": "Outdoor Shoes",
+    "region": "FR/Global",
+    "fit": "technical outdoor",
+    "sourceType": "public",
+    "baseConfidence": 0.7,
+    "fitOffset": 0,
+    "width": "regular-narrow",
+    "risk": "low"
+  },
+  {
+    "id": "clarks",
+    "name": "Clarks",
+    "aliases": [
+      "clarks"
+    ],
+    "segment": "Shoes",
+    "region": "UK/Global",
+    "fit": "comfort regular",
+    "sourceType": "public",
+    "baseConfidence": 0.69,
+    "fitOffset": 0,
+    "width": "regular",
+    "risk": "low"
+  },
+  {
+    "id": "drmartens",
+    "name": "Dr. Martens",
+    "aliases": [
+      "dr martens",
+      "drmartens",
+      "doc martens"
+    ],
+    "segment": "Boots",
+    "region": "UK/Global",
+    "fit": "boot regular",
+    "sourceType": "public",
+    "baseConfidence": 0.67,
+    "fitOffset": 0,
+    "width": "regular-wide feel",
+    "risk": "medium"
+  }
+]
