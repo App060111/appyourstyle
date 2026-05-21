@@ -1,0 +1,177 @@
+{
+  "oberteile": {
+    "label": "Oberteile / Hoodies",
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "fields": [
+      "größe",
+      "passform",
+      "material"
+    ],
+    "fits": [
+      "schmal",
+      "normal",
+      "locker",
+      "oversized"
+    ]
+  },
+  "schuhe": {
+    "label": "Schuhe / Sneaker",
+    "sizes": [
+      "EU 36",
+      "EU 37",
+      "EU 38",
+      "EU 39",
+      "EU 40",
+      "EU 41",
+      "EU 42",
+      "EU 43",
+      "EU 44",
+      "EU 45",
+      "EU 46",
+      "EU 47",
+      "EU 48",
+      "US Herren 8",
+      "US Herren 9",
+      "US Herren 10",
+      "US Damen 8",
+      "US Damen 9",
+      "UK 8",
+      "UK 9",
+      "CM 26",
+      "CM 27",
+      "JP 27"
+    ],
+    "widths": [
+      "schmal",
+      "normal",
+      "breit",
+      "extra breit"
+    ],
+    "use": [
+      "Alltag",
+      "Running",
+      "Business",
+      "Outdoor"
+    ]
+  },
+  "jeans": {
+    "label": "Jeans / Hosen",
+    "waist": [
+      "W26",
+      "W27",
+      "W28",
+      "W29",
+      "W30",
+      "W31",
+      "W32",
+      "W33",
+      "W34",
+      "W36",
+      "W38",
+      "W40"
+    ],
+    "length": [
+      "L28",
+      "L30",
+      "L32",
+      "L34",
+      "L36"
+    ],
+    "fits": [
+      "Skinny",
+      "Straight",
+      "Relaxed",
+      "Baggy"
+    ]
+  },
+  "jacken": {
+    "label": "Jacken / Outerwear",
+    "sizes": [
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "fits": [
+      "schmal",
+      "normal",
+      "locker",
+      "oversized"
+    ]
+  },
+  "luxus": {
+    "label": "Luxury / Designer",
+    "sizes": [
+      "IT 44",
+      "IT 46",
+      "IT 48",
+      "IT 50",
+      "IT 52",
+      "FR 44",
+      "FR 46",
+      "FR 48",
+      "EU 46",
+      "EU 48",
+      "EU 50",
+      "EU 52"
+    ],
+    "fits": [
+      "tailored",
+      "schmal",
+      "normal",
+      "locker"
+    ]
+  },
+  "kinder": {
+    "label": "Kindergrößen",
+    "sizes": [
+      "Alter 2",
+      "Alter 4",
+      "Alter 6",
+      "Alter 8",
+      "Alter 10",
+      "Alter 12",
+      "EU 92",
+      "EU 104",
+      "EU 116",
+      "EU 128",
+      "EU 140",
+      "CM 100",
+      "CM 120",
+      "CM 140"
+    ]
+  },
+  "unterwäsche": {
+    "label": "Unterwäsche / BH",
+    "bands": [
+      "EU 70",
+      "EU 75",
+      "EU 80",
+      "EU 85",
+      "US 32",
+      "US 34",
+      "US 36"
+    ],
+    "cups": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "DD/E",
+      "F",
+      "G"
+    ]
+  }
+}

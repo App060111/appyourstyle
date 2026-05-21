@@ -1,1 +1,1 @@
-export async function POST(req){const body=await req.json();const links=(body.links||[]).filter(Boolean);const risk=links.some(l=>String(l).includes('temu')||String(l).includes('aliexpress'))?'high':'medium';return Response.json({count:links.length,risk,summary:`${links.length} Produktlinks erkannt. Outfit-Kompatibilität ist AI-ready vorbereitet; Marketplace-Risk: ${risk}.`})}
+import{analyzeOutfit}from'../../../../lib/data';export async function POST(req){const body=await req.json();return Response.json(analyzeOutfit(body.links||[]))}

@@ -2,231 +2,376 @@
   {
     "id": "nike",
     "name": "Nike",
+    "segment": "Sportswear",
     "aliases": [
       "nike",
       "nike running",
       "nike sb"
     ],
-    "segment": "Sportswear",
-    "region": "US/Global",
-    "fit": "athletic regular",
-    "sourceType": "public",
-    "baseConfidence": 0.79,
-    "risk": "low"
+    "cats": [
+      "oberteile",
+      "schuhe"
+    ],
+    "confidence": 82,
+    "risk": "niedrig",
+    "fit": "sportlich / normal"
   },
   {
     "id": "adidas",
     "name": "Adidas",
+    "segment": "Sportswear",
     "aliases": [
       "adidas"
     ],
+    "cats": [
+      "oberteile",
+      "schuhe"
+    ],
+    "confidence": 82,
+    "risk": "niedrig",
+    "fit": "normal / sportlich"
+  },
+  {
+    "id": "puma",
+    "name": "Puma",
     "segment": "Sportswear",
-    "region": "EU/Global",
-    "fit": "regular athletic",
-    "sourceType": "public",
-    "baseConfidence": 0.79,
-    "risk": "low"
-  },
-  {
-    "id": "zara",
-    "name": "Zara",
     "aliases": [
-      "zara"
+      "puma"
     ],
-    "segment": "Fast Fashion",
-    "region": "EU/Global",
-    "fit": "fashion slim/regular",
-    "sourceType": "public",
-    "baseConfidence": 0.68,
-    "risk": "medium"
-  },
-  {
-    "id": "boss",
-    "name": "BOSS / Hugo Boss",
-    "aliases": [
-      "boss",
-      "hugo boss"
+    "cats": [
+      "oberteile",
+      "schuhe"
     ],
-    "segment": "Premium",
-    "region": "EU/Global",
-    "fit": "modern slim/regular",
-    "sourceType": "estimated",
-    "baseConfidence": 0.6,
-    "risk": "medium"
-  },
-  {
-    "id": "lloyd",
-    "name": "Lloyd",
-    "aliases": [
-      "lloyd",
-      "loyd"
-    ],
-    "segment": "Formal Shoes",
-    "region": "EU",
-    "fit": "classic leather shoe",
-    "sourceType": "public",
-    "baseConfidence": 0.72,
-    "risk": "low"
-  },
-  {
-    "id": "hoka",
-    "name": "Hoka",
-    "aliases": [
-      "hoka",
-      "hoka one one"
-    ],
-    "segment": "Running Shoes",
-    "region": "Global",
-    "fit": "performance running cushioned",
-    "sourceType": "public",
-    "baseConfidence": 0.73,
-    "risk": "low"
-  },
-  {
-    "id": "asics",
-    "name": "ASICS",
-    "aliases": [
-      "asics"
-    ],
-    "segment": "Running Shoes",
-    "region": "JP/Global",
-    "fit": "performance running",
-    "sourceType": "public",
-    "baseConfidence": 0.73,
-    "risk": "low"
+    "confidence": 78,
+    "risk": "niedrig",
+    "fit": "normal"
   },
   {
     "id": "newbalance",
     "name": "New Balance",
+    "segment": "Sneaker & Running",
     "aliases": [
       "new balance",
       "nb"
     ],
-    "segment": "Sneakers",
-    "region": "US/Global",
-    "fit": "model dependent",
-    "sourceType": "public",
-    "baseConfidence": 0.72,
-    "risk": "low"
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 78,
+    "risk": "niedrig",
+    "fit": "modellabhängig, viele Weiten"
+  },
+  {
+    "id": "asics",
+    "name": "ASICS",
+    "segment": "Running",
+    "aliases": [
+      "asics"
+    ],
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 77,
+    "risk": "niedrig",
+    "fit": "running / normal"
+  },
+  {
+    "id": "hoka",
+    "name": "Hoka",
+    "segment": "Running",
+    "aliases": [
+      "hoka",
+      "hoka one one"
+    ],
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 76,
+    "risk": "niedrig",
+    "fit": "gedämpft, teilweise voluminöser"
   },
   {
     "id": "brooks",
     "name": "Brooks",
+    "segment": "Running",
     "aliases": [
       "brooks"
     ],
-    "segment": "Running Shoes",
-    "region": "US/Global",
-    "fit": "running regular/wide",
-    "sourceType": "public",
-    "baseConfidence": 0.7,
-    "risk": "low"
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 74,
+    "risk": "niedrig",
+    "fit": "running, normale bis breite Weite"
   },
   {
     "id": "saucony",
     "name": "Saucony",
+    "segment": "Running",
     "aliases": [
       "saucony"
     ],
-    "segment": "Running Shoes",
-    "region": "US/Global",
-    "fit": "running regular",
-    "sourceType": "public",
-    "baseConfidence": 0.69,
-    "risk": "low"
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 72,
+    "risk": "niedrig",
+    "fit": "running / normal"
   },
   {
-    "id": "temu",
-    "name": "Temu",
+    "id": "lloyd",
+    "name": "Lloyd",
+    "segment": "Business Schuhe",
     "aliases": [
-      "temu",
-      "temu sneakers"
+      "lloyd",
+      "loyd"
     ],
-    "segment": "Marketplace",
-    "region": "CN/Global",
-    "fit": "seller/product dependent",
-    "sourceType": "estimated",
-    "baseConfidence": 0.42,
-    "risk": "high"
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 75,
+    "risk": "niedrig",
+    "fit": "klassischer Lederschuh"
   },
   {
-    "id": "aliexpress",
-    "name": "AliExpress",
+    "id": "birkenstock",
+    "name": "Birkenstock",
+    "segment": "Schuhe",
     "aliases": [
-      "aliexpress",
-      "ali express"
+      "birkenstock"
     ],
-    "segment": "Marketplace",
-    "region": "CN/Global",
-    "fit": "seller/product dependent",
-    "sourceType": "estimated",
-    "baseConfidence": 0.4,
-    "risk": "high"
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 77,
+    "risk": "niedrig",
+    "fit": "normale / schmale Fußbett-Auswahl"
   },
   {
-    "id": "shein",
-    "name": "SHEIN",
+    "id": "crocs",
+    "name": "Crocs",
+    "segment": "Schuhe",
     "aliases": [
-      "shein"
+      "crocs"
     ],
-    "segment": "Marketplace Fashion",
-    "region": "CN/Global",
-    "fit": "product dependent slim/regular",
-    "sourceType": "estimated",
-    "baseConfidence": 0.49,
-    "risk": "high"
+    "cats": [
+      "schuhe"
+    ],
+    "confidence": 70,
+    "risk": "niedrig",
+    "fit": "roomy / locker"
   },
   {
-    "id": "gucci",
-    "name": "Gucci",
+    "id": "zara",
+    "name": "Zara",
+    "segment": "Fast Fashion",
     "aliases": [
-      "gucci"
+      "zara"
     ],
-    "segment": "Luxury",
-    "region": "IT/Global",
-    "fit": "italian luxury",
-    "sourceType": "public",
-    "baseConfidence": 0.66,
-    "risk": "medium"
+    "cats": [
+      "oberteile",
+      "jeans",
+      "jacken"
+    ],
+    "confidence": 68,
+    "risk": "mittel",
+    "fit": "modisch, teils schmal"
   },
   {
-    "id": "prada",
-    "name": "Prada",
+    "id": "hm",
+    "name": "H&M",
+    "segment": "Fast Fashion",
     "aliases": [
-      "prada"
+      "hm",
+      "h&m"
     ],
-    "segment": "Luxury",
-    "region": "IT/Global",
-    "fit": "italian luxury",
-    "sourceType": "estimated",
-    "baseConfidence": 0.58,
-    "risk": "medium"
+    "cats": [
+      "oberteile",
+      "jeans",
+      "kinder"
+    ],
+    "confidence": 66,
+    "risk": "mittel",
+    "fit": "produktabhängig"
   },
   {
     "id": "uniqlo",
     "name": "Uniqlo",
+    "segment": "Basics",
     "aliases": [
       "uniqlo"
     ],
-    "segment": "Basics",
-    "region": "JP/Global",
-    "fit": "regular basics",
-    "sourceType": "public",
-    "baseConfidence": 0.68,
-    "risk": "medium"
+    "cats": [
+      "oberteile",
+      "jeans",
+      "kinder"
+    ],
+    "confidence": 70,
+    "risk": "mittel",
+    "fit": "klar, basic, normal"
+  },
+  {
+    "id": "boss",
+    "name": "BOSS / Hugo Boss",
+    "segment": "Premium",
+    "aliases": [
+      "boss",
+      "hugo boss"
+    ],
+    "cats": [
+      "oberteile",
+      "jeans",
+      "jacken",
+      "luxus"
+    ],
+    "confidence": 64,
+    "risk": "mittel",
+    "fit": "modern, teils schmal"
+  },
+  {
+    "id": "ralphlauren",
+    "name": "Ralph Lauren",
+    "segment": "Premium",
+    "aliases": [
+      "ralph lauren",
+      "polo ralph lauren"
+    ],
+    "cats": [
+      "oberteile",
+      "jacken",
+      "kinder"
+    ],
+    "confidence": 66,
+    "risk": "mittel",
+    "fit": "classic / regular"
+  },
+  {
+    "id": "gucci",
+    "name": "Gucci",
+    "segment": "Luxury",
+    "aliases": [
+      "gucci"
+    ],
+    "cats": [
+      "luxus",
+      "schuhe"
+    ],
+    "confidence": 62,
+    "risk": "mittel",
+    "fit": "italienischer Designer-Fit"
+  },
+  {
+    "id": "prada",
+    "name": "Prada",
+    "segment": "Luxury",
+    "aliases": [
+      "prada"
+    ],
+    "cats": [
+      "luxus",
+      "schuhe"
+    ],
+    "confidence": 60,
+    "risk": "mittel",
+    "fit": "italienischer Designer-Fit"
+  },
+  {
+    "id": "acne",
+    "name": "Acne Studios",
+    "segment": "Designer",
+    "aliases": [
+      "acne",
+      "acne studios"
+    ],
+    "cats": [
+      "oberteile",
+      "jeans",
+      "jacken",
+      "luxus"
+    ],
+    "confidence": 59,
+    "risk": "mittel",
+    "fit": "modern / oversized möglich"
+  },
+  {
+    "id": "levis",
+    "name": "Levi’s",
+    "segment": "Denim",
+    "aliases": [
+      "levis",
+      "levi's",
+      "levi"
+    ],
+    "cats": [
+      "jeans"
+    ],
+    "confidence": 76,
+    "risk": "niedrig",
+    "fit": "denim, modellabhängig"
+  },
+  {
+    "id": "temu",
+    "name": "Temu",
+    "segment": "Marketplace",
+    "aliases": [
+      "temu"
+    ],
+    "cats": [
+      "oberteile",
+      "schuhe",
+      "jeans",
+      "kinder"
+    ],
+    "confidence": 42,
+    "risk": "hoch",
+    "fit": "seller- und produktabhängig"
+  },
+  {
+    "id": "aliexpress",
+    "name": "AliExpress",
+    "segment": "Marketplace",
+    "aliases": [
+      "aliexpress",
+      "ali express"
+    ],
+    "cats": [
+      "oberteile",
+      "schuhe",
+      "jeans"
+    ],
+    "confidence": 40,
+    "risk": "hoch",
+    "fit": "seller- und produktabhängig"
+  },
+  {
+    "id": "shein",
+    "name": "SHEIN",
+    "segment": "Marketplace Fashion",
+    "aliases": [
+      "shein"
+    ],
+    "cats": [
+      "oberteile",
+      "jeans",
+      "kinder"
+    ],
+    "confidence": 49,
+    "risk": "hoch",
+    "fit": "produktabhängig, teils kleiner"
   },
   {
     "id": "victoriassecret",
-    "name": "Victoria's Secret",
-    "aliases": [
-      "victoria secret",
-      "victorias secret"
-    ],
+    "name": "Victoria’s Secret",
     "segment": "Lingerie",
-    "region": "US/Global",
-    "fit": "lingerie sizing",
-    "sourceType": "public",
-    "baseConfidence": 0.62,
-    "risk": "medium"
+    "aliases": [
+      "victorias secret",
+      "victoria secret"
+    ],
+    "cats": [
+      "unterwäsche"
+    ],
+    "confidence": 62,
+    "risk": "mittel",
+    "fit": "Band-/Cup-System"
   }
 ]

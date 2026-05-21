@@ -1,0 +1,1 @@
+import{parseQuestion}from'../../../../lib/data';import{aiAnswer}from'../../../../lib/ai/openai';export async function POST(req){const body=await req.json();const parsed=parseQuestion(body.question);const answer=await aiAnswer({question:body.question,context:{parsed}});return Response.json({parsed,answer})}

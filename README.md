@@ -1,20 +1,20 @@
-# AppYourStyle — Phase 6 AI Fashion Search Engine Evolution
+# AppYourStyle — Phase 7 DE Dynamic Fashion Engine
 
 Neu:
-- Bottom Navigation Fix mit Safe-Area
-- Dynamic Category Size Engine
-- Shoes: EU/US Men/US Women/UK/CM/JP + Width
-- Tops/Hoodies: XS–3XL + Fit Preference
-- Jeans: Waist/Length/W-L
-- Luxury: IT/FR/EU Tailored
-- Kids: Age/CM/EU
-- Lingerie: Band/Cup
-- Live AI Response Cards
-- Thinking States
-- localStorage Memory ohne Login
-- Live Brand Search
-- AI Search Page
-- Confidence Engine v2
-- AI-ready OpenAI/Gemini/Pinecone/Replicate Routes
+- komplette deutsche Kategorie-Auswahl
+- keine englischen Kategorien wie shoes/tops mehr
+- Hersteller-Auswahl erweitert
+- alle Hersteller in beiden Brand-Feldern auswählbar
+- Kategorie-abhängige Größenfelder
+- Schuhe: EU / US Herren / US Damen / UK / CM / JP + Weite
+- Jeans: W/L + Schnitt
+- Unterwäsche: Band + Cup
+- Kindergrößen: Alter / EU / CM
+- Luxury: IT / FR / EU
+- Live-Ergebnis-Karten
+- Outfit-Ergebnis wird nach Klick sichtbar
+- bessere deutsche Hero-Copy
+- replicate-Version korrigiert: 0.32.0
 
-Upload: ZIP entpacken und Inhalte direkt ins GitHub Root hochladen.
+Upload:
+ZIP entpacken → Inhalte direkt ins GitHub-Root hochladen → Commit.

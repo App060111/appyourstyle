@@ -1,1 +1,1 @@
-import './globals.css';export const metadata={title:'AppYourStyle — AI Fashion Search Engine',description:'Dynamische Fashion Size Intelligence mit Kategorie-Size-Engine, AI Response Cards und Search.'};export default function RootLayout({children}){return <html lang='de'><body>{children}</body></html>}
+import './globals.css';export const metadata={title:'AppYourStyle — Welche Größe passt wirklich?',description:'Vergleiche Größen und Passformen zwischen Marken.'};export default function RootLayout({children}){return <html lang='de'><body>{children}</body></html>}
