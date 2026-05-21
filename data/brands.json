@@ -14,7 +14,8 @@
     ],
     "confidence": 82,
     "risk": "niedrig",
-    "fit": "sportlich / normal"
+    "fit": "sportlich / normal",
+    "recommendation": "meist true-to-size, bei Performance-Schuhen Weite beachten"
   },
   {
     "id": "adidas",
@@ -29,7 +30,8 @@
     ],
     "confidence": 82,
     "risk": "niedrig",
-    "fit": "normal / sportlich"
+    "fit": "normal / sportlich",
+    "recommendation": "häufig normal, je nach Linie teils etwas weiter"
   },
   {
     "id": "puma",
@@ -44,7 +46,8 @@
     ],
     "confidence": 78,
     "risk": "niedrig",
-    "fit": "normal"
+    "fit": "normal",
+    "recommendation": "meist normal, sportliche Passform prüfen"
   },
   {
     "id": "newbalance",
@@ -59,7 +62,8 @@
     ],
     "confidence": 78,
     "risk": "niedrig",
-    "fit": "modellabhängig, viele Weiten"
+    "fit": "modellabhängig, viele Weiten",
+    "recommendation": "Weite ist entscheidend, bei breiten Füßen Wide prüfen"
   },
   {
     "id": "asics",
@@ -73,7 +77,8 @@
     ],
     "confidence": 77,
     "risk": "niedrig",
-    "fit": "running / normal"
+    "fit": "running / normal",
+    "recommendation": "Running-Fit prüfen, bei langen Läufen etwas Platz einplanen"
   },
   {
     "id": "hoka",
@@ -88,7 +93,8 @@
     ],
     "confidence": 76,
     "risk": "niedrig",
-    "fit": "gedämpft, teilweise voluminöser"
+    "fit": "gedämpft, teilweise voluminöser",
+    "recommendation": "bei Running und breiten Füßen Weite prüfen"
   },
   {
     "id": "brooks",
@@ -102,7 +108,8 @@
     ],
     "confidence": 74,
     "risk": "niedrig",
-    "fit": "running, normale bis breite Weite"
+    "fit": "running, normale bis breite Weite",
+    "recommendation": "Running-Fit und Zehenfreiheit beachten"
   },
   {
     "id": "saucony",
@@ -116,7 +123,8 @@
     ],
     "confidence": 72,
     "risk": "niedrig",
-    "fit": "running / normal"
+    "fit": "running / normal",
+    "recommendation": "meist normal, Modellabhängigkeit beachten"
   },
   {
     "id": "lloyd",
@@ -131,7 +139,8 @@
     ],
     "confidence": 75,
     "risk": "niedrig",
-    "fit": "klassischer Lederschuh"
+    "fit": "klassischer Lederschuh",
+    "recommendation": "Leder kann anfangs fester sitzen, nicht zu groß wählen"
   },
   {
     "id": "birkenstock",
@@ -145,7 +154,8 @@
     ],
     "confidence": 77,
     "risk": "niedrig",
-    "fit": "normale / schmale Fußbett-Auswahl"
+    "fit": "normale / schmale Fußbett-Auswahl",
+    "recommendation": "Fußbettweite wählen, nicht nur Länge"
   },
   {
     "id": "crocs",
@@ -159,7 +169,8 @@
     ],
     "confidence": 70,
     "risk": "niedrig",
-    "fit": "roomy / locker"
+    "fit": "roomy / locker",
+    "recommendation": "lockerer Sitz, ggf. kleiner prüfen"
   },
   {
     "id": "zara",
@@ -175,7 +186,8 @@
     ],
     "confidence": 68,
     "risk": "mittel",
-    "fit": "modisch, teils schmal"
+    "fit": "modisch, teils schmal",
+    "recommendation": "bei enger Passform lieber eine Größe größer prüfen"
   },
   {
     "id": "hm",
@@ -192,7 +204,8 @@
     ],
     "confidence": 66,
     "risk": "mittel",
-    "fit": "produktabhängig"
+    "fit": "produktabhängig",
+    "recommendation": "Produktlinie und Schnitt beachten"
   },
   {
     "id": "uniqlo",
@@ -208,7 +221,8 @@
     ],
     "confidence": 70,
     "risk": "mittel",
-    "fit": "klar, basic, normal"
+    "fit": "klar, basic, normal",
+    "recommendation": "meist gut berechenbar, Fit-Typ prüfen"
   },
   {
     "id": "boss",
@@ -226,7 +240,8 @@
     ],
     "confidence": 64,
     "risk": "mittel",
-    "fit": "modern, teils schmal"
+    "fit": "modern, teils schmal",
+    "recommendation": "bei Slim-Fit eher größer prüfen"
   },
   {
     "id": "ralphlauren",
@@ -243,7 +258,8 @@
     ],
     "confidence": 66,
     "risk": "mittel",
-    "fit": "classic / regular"
+    "fit": "classic / regular",
+    "recommendation": "Classic Fit meist großzügiger als Slim Fit"
   },
   {
     "id": "gucci",
@@ -258,7 +274,8 @@
     ],
     "confidence": 62,
     "risk": "mittel",
-    "fit": "italienischer Designer-Fit"
+    "fit": "italienischer Designer-Fit",
+    "recommendation": "Designer-Fit und IT/EU-System prüfen"
   },
   {
     "id": "prada",
@@ -273,7 +290,8 @@
     ],
     "confidence": 60,
     "risk": "mittel",
-    "fit": "italienischer Designer-Fit"
+    "fit": "italienischer Designer-Fit",
+    "recommendation": "bei Designergrößen Vergleich vorsichtig interpretieren"
   },
   {
     "id": "acne",
@@ -291,7 +309,8 @@
     ],
     "confidence": 59,
     "risk": "mittel",
-    "fit": "modern / oversized möglich"
+    "fit": "modern / oversized möglich",
+    "recommendation": "Oversized bewusst wählen, nicht automatisch größer kaufen"
   },
   {
     "id": "levis",
@@ -307,7 +326,8 @@
     ],
     "confidence": 76,
     "risk": "niedrig",
-    "fit": "denim, modellabhängig"
+    "fit": "denim, modellabhängig",
+    "recommendation": "Modellnummer entscheidet stark über Passform"
   },
   {
     "id": "temu",
@@ -324,7 +344,8 @@
     ],
     "confidence": 42,
     "risk": "hoch",
-    "fit": "seller- und produktabhängig"
+    "fit": "seller- und produktabhängig",
+    "recommendation": "Maßtabelle und Bewertungen zwingend prüfen"
   },
   {
     "id": "aliexpress",
@@ -341,7 +362,8 @@
     ],
     "confidence": 40,
     "risk": "hoch",
-    "fit": "seller- und produktabhängig"
+    "fit": "seller- und produktabhängig",
+    "recommendation": "eher CM-Maße als Buchstabengröße nutzen"
   },
   {
     "id": "shein",
@@ -357,7 +379,8 @@
     ],
     "confidence": 49,
     "risk": "hoch",
-    "fit": "produktabhängig, teils kleiner"
+    "fit": "produktabhängig, teils kleiner",
+    "recommendation": "Bewertungen und Produktmaße prüfen"
   },
   {
     "id": "victoriassecret",
@@ -372,6 +395,7 @@
     ],
     "confidence": 62,
     "risk": "mittel",
-    "fit": "Band-/Cup-System"
+    "fit": "Band-/Cup-System",
+    "recommendation": "Band und Cup separat vergleichen"
   }
 ]

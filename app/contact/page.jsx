@@ -1,1 +1,1 @@
-import Header from '../../components/Header';import Footer from '../../components/Footer';export default function Page(){return <main className='container'><Header/><section><h1>Kontakt</h1><p>AppYourStyle Phase 7.</p></section><Footer/></main>}
+import Header from '../../components/Header';import Footer from '../../components/Footer';export default function Page(){return <main className='container'><Header/><section><h1>Kontakt</h1><p>AppYourStyle Phase 8.</p></section><Footer/></main>}

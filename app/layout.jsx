@@ -1,1 +1,1 @@
-import './globals.css';export const metadata={title:'AppYourStyle — Welche Größe passt wirklich?',description:'Vergleiche Größen und Passformen zwischen Marken.'};export default function RootLayout({children}){return <html lang='de'><body>{children}</body></html>}
+import './globals.css';export const metadata={title:'AppYourStyle — Welche Größe soll ich kaufen?',description:'Kaufempfehlungen, Passform und Smart Outfit Links.'};export default function RootLayout({children}){return <html lang='de'><body>{children}</body></html>}

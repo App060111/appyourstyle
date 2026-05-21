@@ -1,20 +1,17 @@
-# AppYourStyle — Phase 7 DE Dynamic Fashion Engine
+# AppYourStyle — Phase 8 AI Fashion Decision Layer
 
 Neu:
-- komplette deutsche Kategorie-Auswahl
-- keine englischen Kategorien wie shoes/tops mehr
-- Hersteller-Auswahl erweitert
-- alle Hersteller in beiden Brand-Feldern auswählbar
-- Kategorie-abhängige Größenfelder
-- Schuhe: EU / US Herren / US Damen / UK / CM / JP + Weite
-- Jeans: W/L + Schnitt
-- Unterwäsche: Band + Cup
-- Kindergrößen: Alter / EU / CM
-- Luxury: IT / FR / EU
-- Live-Ergebnis-Karten
-- Outfit-Ergebnis wird nach Klick sichtbar
-- bessere deutsche Hero-Copy
-- replicate-Version korrigiert: 0.32.0
+- Empfehlungsebene statt reiner Größenwahrscheinlichkeit
+- klare Kauf-/Passform-Empfehlung: kaufen, größer prüfen, Weite prüfen, Risiko prüfen
+- 4-Link Outfit Engine
+- Smart Outfit Link über AppYourStyle
+- Originalshops bleiben verlinkt
+- keine fremden Checkouts, keine Markenpartnerschaft suggeriert
+- Outfit Hold / Smart Cart als Analyse-Link
+- deutsche Kategorien
+- alle Hersteller auswählbar
+- Schuhgrößen EU/US/UK/CM/JP + Weite
+- Outfit-Ergebnis mit Harmonie, Risiko, Rollen und Original-Links
 
 Upload:
-ZIP entpacken → Inhalte direkt ins GitHub-Root hochladen → Commit.
+ZIP entpacken → Inhalte direkt ins GitHub Root hochladen → Commit.

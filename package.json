@@ -1,6 +1,6 @@
 {
-  "name": "appyourstyle-phase-7-de-dynamic-fashion-engine",
-  "version": "10.0.0",
+  "name": "appyourstyle-phase-8-ai-fashion-decision-layer",
+  "version": "11.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

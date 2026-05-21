@@ -1,1 +1,1 @@
-export default function Thinking(){return <div className="thinking"><span></span>Analysiere Hersteller, Kategorie, Passform und Risiko…</div>}
+export default function Thinking(){return <div className='thinking'><span></span>Ermittle Kaufempfehlung, Passform, Risiko und nächsten Schritt…</div>}
