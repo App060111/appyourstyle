@@ -1,0 +1,1 @@
+export default function ThinkingState({step=0}){const steps=['Analysiere Größenlogik…','Vergleiche Brand-Fits…','Prüfe Marketplace-Risiko…','Berechne Confidence…'];return <div className='thinking'><span></span>{steps[step%steps.length]}</div>}

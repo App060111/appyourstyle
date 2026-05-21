@@ -1,6 +1,6 @@
 {
-  "name": "appyourstyle-phase-5-real-ai-infrastructure",
-  "version": "8.0.0",
+  "name": "appyourstyle-phase-6-ai-fashion-search-engine",
+  "version": "9.0.0",
   "private": true,
   "scripts": {
     "dev": "next dev",

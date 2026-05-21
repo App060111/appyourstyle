@@ -3,15 +3,15 @@
     "id": "nike",
     "name": "Nike",
     "aliases": [
-      "nike"
+      "nike",
+      "nike running",
+      "nike sb"
     ],
     "segment": "Sportswear",
     "region": "US/Global",
     "fit": "athletic regular",
     "sourceType": "public",
     "baseConfidence": 0.79,
-    "fitOffset": 0,
-    "width": "regular",
     "risk": "low"
   },
   {
@@ -25,8 +25,6 @@
     "fit": "regular athletic",
     "sourceType": "public",
     "baseConfidence": 0.79,
-    "fitOffset": 0,
-    "width": "regular",
     "risk": "low"
   },
   {
@@ -40,25 +38,6 @@
     "fit": "fashion slim/regular",
     "sourceType": "public",
     "baseConfidence": 0.68,
-    "fitOffset": 1,
-    "width": "regular-slim",
-    "risk": "medium"
-  },
-  {
-    "id": "hm",
-    "name": "H&M",
-    "aliases": [
-      "hm",
-      "h&m",
-      "hennes"
-    ],
-    "segment": "Fast Fashion",
-    "region": "EU/Global",
-    "fit": "regular/product dependent",
-    "sourceType": "public",
-    "baseConfidence": 0.66,
-    "fitOffset": 0,
-    "width": "regular",
     "risk": "medium"
   },
   {
@@ -66,17 +45,13 @@
     "name": "BOSS / Hugo Boss",
     "aliases": [
       "boss",
-      "hugo boss",
-      "hugoboss",
-      "hugo"
+      "hugo boss"
     ],
     "segment": "Premium",
     "region": "EU/Global",
     "fit": "modern slim/regular",
     "sourceType": "estimated",
     "baseConfidence": 0.6,
-    "fitOffset": 1,
-    "width": "regular-slim",
     "risk": "medium"
   },
   {
@@ -91,8 +66,6 @@
     "fit": "classic leather shoe",
     "sourceType": "public",
     "baseConfidence": 0.72,
-    "fitOffset": 0,
-    "width": "regular",
     "risk": "low"
   },
   {
@@ -107,8 +80,6 @@
     "fit": "performance running cushioned",
     "sourceType": "public",
     "baseConfidence": 0.73,
-    "fitOffset": 0,
-    "width": "regular-wide feel",
     "risk": "low"
   },
   {
@@ -122,8 +93,6 @@
     "fit": "performance running",
     "sourceType": "public",
     "baseConfidence": 0.73,
-    "fitOffset": 0,
-    "width": "regular",
     "risk": "low"
   },
   {
@@ -131,31 +100,53 @@
     "name": "New Balance",
     "aliases": [
       "new balance",
-      "nb",
-      "newbalance"
+      "nb"
     ],
     "segment": "Sneakers",
     "region": "US/Global",
     "fit": "model dependent",
     "sourceType": "public",
     "baseConfidence": 0.72,
-    "fitOffset": 0,
-    "width": "multiple widths",
+    "risk": "low"
+  },
+  {
+    "id": "brooks",
+    "name": "Brooks",
+    "aliases": [
+      "brooks"
+    ],
+    "segment": "Running Shoes",
+    "region": "US/Global",
+    "fit": "running regular/wide",
+    "sourceType": "public",
+    "baseConfidence": 0.7,
+    "risk": "low"
+  },
+  {
+    "id": "saucony",
+    "name": "Saucony",
+    "aliases": [
+      "saucony"
+    ],
+    "segment": "Running Shoes",
+    "region": "US/Global",
+    "fit": "running regular",
+    "sourceType": "public",
+    "baseConfidence": 0.69,
     "risk": "low"
   },
   {
     "id": "temu",
     "name": "Temu",
     "aliases": [
-      "temu"
+      "temu",
+      "temu sneakers"
     ],
     "segment": "Marketplace",
     "region": "CN/Global",
     "fit": "seller/product dependent",
     "sourceType": "estimated",
     "baseConfidence": 0.42,
-    "fitOffset": 1,
-    "width": "unknown",
     "risk": "high"
   },
   {
@@ -170,23 +161,6 @@
     "fit": "seller/product dependent",
     "sourceType": "estimated",
     "baseConfidence": 0.4,
-    "fitOffset": 1,
-    "width": "unknown",
-    "risk": "high"
-  },
-  {
-    "id": "alibaba",
-    "name": "Alibaba",
-    "aliases": [
-      "alibaba"
-    ],
-    "segment": "Marketplace",
-    "region": "CN/Global",
-    "fit": "supplier dependent",
-    "sourceType": "estimated",
-    "baseConfidence": 0.38,
-    "fitOffset": 1,
-    "width": "unknown",
     "risk": "high"
   },
   {
@@ -200,8 +174,6 @@
     "fit": "product dependent slim/regular",
     "sourceType": "estimated",
     "baseConfidence": 0.49,
-    "fitOffset": 1,
-    "width": "regular-slim",
     "risk": "high"
   },
   {
@@ -215,38 +187,46 @@
     "fit": "italian luxury",
     "sourceType": "public",
     "baseConfidence": 0.66,
-    "fitOffset": 0,
-    "width": "regular",
     "risk": "medium"
   },
   {
-    "id": "birkenstock",
-    "name": "Birkenstock",
+    "id": "prada",
+    "name": "Prada",
     "aliases": [
-      "birkenstock"
+      "prada"
     ],
-    "segment": "Shoes",
-    "region": "EU/Global",
-    "fit": "regular/narrow footbed",
-    "sourceType": "public",
-    "baseConfidence": 0.75,
-    "fitOffset": 0,
-    "width": "regular/narrow",
-    "risk": "low"
+    "segment": "Luxury",
+    "region": "IT/Global",
+    "fit": "italian luxury",
+    "sourceType": "estimated",
+    "baseConfidence": 0.58,
+    "risk": "medium"
   },
   {
-    "id": "crocs",
-    "name": "Crocs",
+    "id": "uniqlo",
+    "name": "Uniqlo",
     "aliases": [
-      "crocs"
+      "uniqlo"
     ],
-    "segment": "Shoes",
-    "region": "US/Global",
-    "fit": "roomy fit",
+    "segment": "Basics",
+    "region": "JP/Global",
+    "fit": "regular basics",
     "sourceType": "public",
-    "baseConfidence": 0.71,
-    "fitOffset": -1,
-    "width": "roomy",
-    "risk": "low"
+    "baseConfidence": 0.68,
+    "risk": "medium"
+  },
+  {
+    "id": "victoriassecret",
+    "name": "Victoria's Secret",
+    "aliases": [
+      "victoria secret",
+      "victorias secret"
+    ],
+    "segment": "Lingerie",
+    "region": "US/Global",
+    "fit": "lingerie sizing",
+    "sourceType": "public",
+    "baseConfidence": 0.62,
+    "risk": "medium"
   }
 ]

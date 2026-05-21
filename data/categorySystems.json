@@ -1,0 +1,146 @@
+{
+  "tops": {
+    "label": "Tops / Hoodies",
+    "sizes": [
+      "XXS",
+      "XS",
+      "S",
+      "M",
+      "L",
+      "XL",
+      "XXL",
+      "3XL"
+    ],
+    "fits": [
+      "slim",
+      "regular",
+      "relaxed",
+      "oversized"
+    ]
+  },
+  "shoes": {
+    "label": "Shoes / Sneakers",
+    "sizes": [
+      "EU 36",
+      "EU 37",
+      "EU 38",
+      "EU 39",
+      "EU 40",
+      "EU 41",
+      "EU 42",
+      "EU 43",
+      "EU 44",
+      "EU 45",
+      "EU 46",
+      "EU 47",
+      "US M 8",
+      "US M 9",
+      "US M 10",
+      "US W 8",
+      "US W 9",
+      "UK 8",
+      "UK 9",
+      "CM 26",
+      "CM 27",
+      "JP 27"
+    ],
+    "widths": [
+      "narrow",
+      "regular",
+      "wide",
+      "extra wide"
+    ],
+    "useCases": [
+      "lifestyle",
+      "running",
+      "formal"
+    ]
+  },
+  "jeans": {
+    "label": "Jeans / Pants",
+    "waist": [
+      "W26",
+      "W28",
+      "W30",
+      "W32",
+      "W34",
+      "W36",
+      "W38",
+      "W40"
+    ],
+    "length": [
+      "L28",
+      "L30",
+      "L32",
+      "L34",
+      "L36"
+    ],
+    "fits": [
+      "skinny",
+      "straight",
+      "relaxed",
+      "baggy"
+    ]
+  },
+  "luxury": {
+    "label": "Luxury / Tailored",
+    "sizes": [
+      "IT 44",
+      "IT 46",
+      "IT 48",
+      "IT 50",
+      "IT 52",
+      "FR 44",
+      "FR 46",
+      "FR 48",
+      "EU 48",
+      "EU 50"
+    ],
+    "fits": [
+      "tailored",
+      "slim",
+      "regular",
+      "relaxed"
+    ]
+  },
+  "kids": {
+    "label": "Kids",
+    "sizes": [
+      "Age 2",
+      "Age 4",
+      "Age 6",
+      "Age 8",
+      "Age 10",
+      "Age 12",
+      "EU 92",
+      "EU 104",
+      "EU 116",
+      "EU 128",
+      "EU 140",
+      "CM 100",
+      "CM 120",
+      "CM 140"
+    ]
+  },
+  "lingerie": {
+    "label": "Lingerie",
+    "bands": [
+      "EU 70",
+      "EU 75",
+      "EU 80",
+      "EU 85",
+      "US 32",
+      "US 34",
+      "US 36"
+    ],
+    "cups": [
+      "A",
+      "B",
+      "C",
+      "D",
+      "DD/E",
+      "F",
+      "G"
+    ]
+  }
+}

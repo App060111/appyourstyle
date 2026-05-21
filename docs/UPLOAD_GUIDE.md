@@ -1,1 +1,1 @@
-ZIP entpacken → GitHub → Add file → Upload files → alle Inhalte hochladen → Commit → Vercel deployed automatisch.
+ZIP entpacken → Inhalte direkt ins GitHub Root hochladen → keine Containerordner → Commit → Vercel deployed.

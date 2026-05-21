@@ -1,17 +1,20 @@
-# AppYourStyle — Phase 5 Real AI Infrastructure
+# AppYourStyle — Phase 6 AI Fashion Search Engine Evolution
 
-Provider-Entscheidung:
-- Text / Fit-Erklärung: OpenAI primary
-- Vision / Screenshot: Gemini Flash primary
-- Vector Search: Pinecone primary
-- Image Preview: Replicate FLUX primary
-- Eigene GPU: NICHT jetzt, erst später bei Skalierung
+Neu:
+- Bottom Navigation Fix mit Safe-Area
+- Dynamic Category Size Engine
+- Shoes: EU/US Men/US Women/UK/CM/JP + Width
+- Tops/Hoodies: XS–3XL + Fit Preference
+- Jeans: Waist/Length/W-L
+- Luxury: IT/FR/EU Tailored
+- Kids: Age/CM/EU
+- Lingerie: Band/Cup
+- Live AI Response Cards
+- Thinking States
+- localStorage Memory ohne Login
+- Live Brand Search
+- AI Search Page
+- Confidence Engine v2
+- AI-ready OpenAI/Gemini/Pinecone/Replicate Routes
 
-Ohne API Keys läuft alles sicher im Mock-Modus.
-Mit API Keys werden echte Provider aktiviert.
-
-## Anmeldung / API Keys
-Siehe `docs/API_SIGNUP_GUIDE.md`.
-
-## Upload
-ZIP entpacken → Inhalte direkt ins GitHub Root laden → Commit → Vercel deployed automatisch.
+Upload: ZIP entpacken und Inhalte direkt ins GitHub Root hochladen.
