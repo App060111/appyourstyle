@@ -1,0 +1,29 @@
+{
+  "render_prompt": "Photorealistic editorial fashion image of one person wearing the combined outfit...",
+  "fit_analysis": {
+    "overall_confidence": 91,
+    "items": [
+      {
+        "type": "hoodie",
+        "expected_fit": "slightly oversized",
+        "recommended_size": "M",
+        "confidence": 94
+      }
+    ]
+  },
+  "style_score": 93,
+  "matching": {
+    "color": 96,
+    "silhouette": 91,
+    "luxury_balance": 94,
+    "seasonal": 88,
+    "trend_relevance": 90
+  },
+  "shopping": {
+    "unified_checkout_ready": true,
+    "items": [],
+    "affiliate_links": [],
+    "total_price_estimate": null
+  },
+  "warnings": []
+}

@@ -1,0 +1,42 @@
+{
+  "user": {
+    "gender": "male",
+    "height_cm": 184,
+    "weight_kg": 82,
+    "body_shape": "athletic",
+    "fit_preference": "slim relaxed",
+    "skin_tone": "neutral",
+    "style": ["luxury streetwear", "minimal", "monochrome"]
+  },
+  "items": [
+    {
+      "type": "hoodie",
+      "brand": "Fear of God",
+      "store": "SSENSE",
+      "size_selected": "M",
+      "product_url": "https://example.com/hoodie",
+      "image_url": "https://example.com/hoodie.jpg",
+      "material": "heavy cotton",
+      "fit": "oversized"
+    },
+    {
+      "type": "pants",
+      "brand": "Zara",
+      "store": "Zara",
+      "size_selected": "32",
+      "product_url": "https://example.com/pants",
+      "image_url": "https://example.com/pants.jpg",
+      "material": "wool blend",
+      "fit": "slim tapered"
+    },
+    {
+      "type": "sneakers",
+      "brand": "Nike",
+      "store": "Nike",
+      "size_selected": "44",
+      "product_url": "https://example.com/sneakers",
+      "image_url": "https://example.com/sneakers.jpg",
+      "fit": "true to size"
+    }
+  ]
+}
