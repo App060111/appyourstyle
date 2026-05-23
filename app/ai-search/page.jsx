@@ -33,7 +33,12 @@ export default function AISearchPage() {
         throw new Error(data.error || "KI konnte keine Antwort erzeugen.");
       }
 
-      setAnswer(data.result);
+      setAnswer(
+  data?.result ||
+  data?.analysis ||
+  data?.answer ||
+  JSON.stringify(data, null, 2)
+);;
     } catch (err) {
       setError(err.message || "Unbekannter Fehler");
     } finally {
