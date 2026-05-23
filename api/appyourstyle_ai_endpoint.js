@@ -1,74 +1,84 @@
-export default async function handler(req, res) {
-  if (req.method !== "POST") {
-    return res.status(405).json({ error: "Method not allowed" });
-  }
-
+export async function POST(req) {
   try {
-    const body = req.body;
+    const body = await req.json();
+    const userQuestion = body?.question || body?.prompt || body?.query || "Welche Größe soll ich kaufen?";
+
+    if (!process.env.OPENAI_API_KEY) {
+      return Response.json(
+        {
+          success: false,
+          error: "OPENAI_API_KEY fehlt in Vercel.",
+          mode: "missing_key"
+        },
+        { status: 500 }
+      );
+    }
 
     const prompt = `
-Du bist die Fashion-KI von AppYourStyle.
-Analysiere die Nutzerdaten und Artikel.
-Gib eine klare Fashion-Intelligence-Antwort auf Deutsch aus.
+Du bist die AppYourStyle-KI.
+Antworte auf Deutsch, klar, app-tauglich und kaufberatend.
 
-Bewerte:
-- Größenpassform
-- Marken-Fit
-- Materialverhalten
-- Risiko zu eng / zu weit
-- Outfit-Kompatibilität
-- Smart-Fit Empfehlung
-- nächster sinnvoller Styling-Schritt
+Nutzerfrage:
+${userQuestion}
 
-USER:
-${JSON.stringify(body.user, null, 2)}
+Kontextdaten:
+${JSON.stringify(body, null, 2)}
 
-ITEMS:
-${JSON.stringify(body.items, null, 2)}
-
-Antworte klar, strukturiert und app-tauglich.
+Gib eine konkrete Antwort mit:
+1. Größenempfehlung
+2. Passform-Begründung
+3. Risiko zu eng/zu weit
+4. Nächster sinnvoller Schritt
 `;
 
     const openaiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
       method: "POST",
       headers: {
         "Content-Type": "application/json",
-        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`,
+        Authorization: `Bearer ${process.env.OPENAI_API_KEY}`
       },
       body: JSON.stringify({
         model: "gpt-4o-mini",
         messages: [
           {
             role: "system",
-            content: "Du bist die KI-Engine von AppYourStyle: Luxury Fashion Stylist, Fit Engine und Outfit Intelligence.",
+            content: "Du bist ein Premium Fashion Fit Advisor für AppYourStyle."
           },
           {
             role: "user",
-            content: prompt,
-          },
+            content: prompt
+          }
         ],
-        temperature: 0.4,
-      }),
+        temperature: 0.4
+      })
     });
 
     const data = await openaiResponse.json();
 
     if (!openaiResponse.ok) {
-      return res.status(openaiResponse.status).json({
-        success: false,
-        error: data?.error?.message || "OpenAI request failed",
-      });
+      return Response.json(
+        {
+          success: false,
+          error: data?.error?.message || "OpenAI request failed",
+          mode: "openai_error"
+        },
+        { status: openaiResponse.status }
+      );
     }
 
-    return res.status(200).json({
+    return Response.json({
       success: true,
-      analysis: data?.choices?.[0]?.message?.content || "Keine KI-Antwort erhalten.",
-      result: data,
+      mode: "openai_live",
+      result: data?.choices?.[0]?.message?.content || "Keine KI-Antwort erhalten."
     });
   } catch (error) {
-    return res.status(500).json({
-      success: false,
-      error: error.message,
-    });
+    return Response.json(
+      {
+        success: false,
+        error: error?.message || "Unbekannter Fehler",
+        mode: "route_error"
+      },
+      { status: 500 }
+    );
   }
 }
