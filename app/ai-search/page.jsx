@@ -2,60 +2,45 @@
 
 import { useState } from "react";
 
-function safeText(value) {
+function toText(value) {
   if (value === null || value === undefined) return "";
   if (typeof value === "string") return value;
-  if (typeof value === "number" || typeof value === "boolean") return String(value);
   try {
     return JSON.stringify(value, null, 2);
-  } catch {
-    return "Antwort konnte nicht dargestellt werden.";
+  } catch (_) {
+    return String(value);
   }
 }
 
-function localFallback(question) {
-  return [
-    "Empfehlung: Wenn Nike EU 44 gut passt, ist bei Hoka meistens EU 44 2/3 der beste Startpunkt.",
-    "Warum: Hoka kann je nach Modell im Vorfuß, Spann und in der Länge etwas anders sitzen als Nike.",
-    "Risiko: Bei breitem Fuß, hohem Spann oder enger Passform zusätzlich EU 45 prüfen.",
-    "Nächster Schritt: Modell und Rückgabeoption prüfen; bei Laufschuhen lieber nicht zu knapp wählen.",
-    question ? `Ausgangsfrage: ${question}` : ""
-  ].filter(Boolean).join("\n\n");
-}
-
 export default function AISearchPage() {
-  const [frage, setFrage] = useState(
+  const [question, setQuestion] = useState(
     "Welche Größe soll ich bei Hoka kaufen, wenn Nike EU 44 passt?"
   );
-  const [antwort, setAntwort] = useState("");
-  const [status, setStatus] = useState("");
-  const [laden, setLaden] = useState(false);
+  const [answer, setAnswer] = useState("");
+  const [loading, setLoading] = useState(false);
+  const [error, setError] = useState("");
 
   async function runAI() {
-    setLaden(true);
-    setStatus("AppYourStyle KI analysiert...");
-    setAntwort("");
+    setLoading(true);
+    setError("");
+    setAnswer("");
 
     try {
       const response = await fetch("/api/appyourstyle_ai_endpoint", {
         method: "POST",
         headers: {
-          "Content-Type": "application/json"
+          "Content-Type": "application/json",
         },
         body: JSON.stringify({
-          frage,
-          source: "AppYourStyle KI-Suche",
+          question,
+          frage: question,
+          source: "AppYourStyle AI Suche",
           category: "groesse",
-          brands: ["Nike", "Hoka"]
-        })
+          brands: ["Nike", "Hoka"],
+        }),
       });
 
-      let data = {};
-      try {
-        data = await response.json();
-      } catch {
-        data = {};
-      }
+      const data = await response.json().catch(() => ({}));
 
       const text =
         data?.result ||
@@ -63,15 +48,16 @@ export default function AISearchPage() {
         data?.answer ||
         data?.message ||
         data?.error ||
-        localFallback(frage);
+        "Keine Antwort erhalten.";
 
-      setAntwort(safeText(text));
-      setStatus(data?.mode ? `Modus: ${safeText(data.mode)}` : "Antwort erhalten");
-    } catch (error) {
-      setAntwort(localFallback(frage));
-      setStatus(`Fallback aktiv: ${safeText(error?.message || "Netzwerkfehler")}`);
+      setAnswer(toText(text));
+    } catch (err) {
+      setError(err?.message || "Unbekannter Fehler");
+      setAnswer(
+        "AppYourStyle konnte gerade keine Live-Antwort laden. Bitte Seite neu laden und erneut versuchen."
+      );
     } finally {
-      setLaden(false);
+      setLoading(false);
     }
   }
 
@@ -81,8 +67,8 @@ export default function AISearchPage() {
         minHeight: "100vh",
         padding: "32px",
         background: "#f6f3ef",
+        color: "#050505",
         fontFamily: "Arial, sans-serif",
-        color: "#050505"
       }}
     >
       <section style={{ maxWidth: "760px", margin: "0 auto" }}>
@@ -92,12 +78,12 @@ export default function AISearchPage() {
             padding: "24px",
             borderRadius: "28px",
             background: "white",
-            border: "1px solid #e7ded3"
+            border: "1px solid #e7ded4",
           }}
         >
           <h1 style={{ fontSize: "42px", margin: "0 0 12px" }}>AppYourStyle</h1>
           <p style={{ fontSize: "18px", color: "#6d6760", margin: 0 }}>
-            Live KI-Größenberatung mit OpenAI und sicherem Fallback.
+            Live KI-Größenberatung mit OpenAI.
           </p>
         </div>
 
@@ -106,7 +92,7 @@ export default function AISearchPage() {
             padding: "28px",
             borderRadius: "28px",
             background: "white",
-            border: "1px solid #e7ded3"
+            border: "1px solid #e7ded4",
           }}
         >
           <span
@@ -115,74 +101,85 @@ export default function AISearchPage() {
               padding: "10px 16px",
               borderRadius: "999px",
               background: "#f1edff",
-              color: "#6d5df6",
+              color: "#6b5cff",
               fontWeight: 800,
-              marginBottom: "20px"
+              marginBottom: "24px",
             }}
           >
             AI Suche
           </span>
 
-          <h2 style={{ fontSize: "38px", margin: "0 0 20px" }}>
+          <h2 style={{ fontSize: "38px", margin: "0 0 24px" }}>
             Frage deine Größe.
           </h2>
 
           <textarea
-            value={frage}
-            onChange={(event) => setFrage(event.target.value)}
+            value={question}
+            onChange={(event) => setQuestion(event.target.value)}
             rows={4}
             style={{
               width: "100%",
               boxSizing: "border-box",
               padding: "18px",
               borderRadius: "20px",
-              border: "1px solid #e7ded3",
-              fontSize: "20px",
+              border: "1px solid #e0d7cd",
+              fontSize: "18px",
               resize: "vertical",
-              marginBottom: "14px",
-              background: "white",
-              color: "#050505"
+              marginBottom: "16px",
+              fontFamily: "inherit",
             }}
           />
 
           <button
             type="button"
             onClick={runAI}
-            disabled={laden}
+            disabled={loading}
             style={{
               width: "100%",
-              border: 0,
-              borderRadius: "22px",
               padding: "20px",
-              background: "#050505",
+              borderRadius: "22px",
+              border: 0,
+              background: loading ? "#777" : "#000",
               color: "white",
               fontSize: "20px",
               fontWeight: 800,
-              cursor: laden ? "not-allowed" : "pointer",
-              opacity: laden ? 0.7 : 1
+              cursor: loading ? "wait" : "pointer",
             }}
           >
-            {laden ? "KI analysiert..." : "Empfehlung suchen"}
+            {loading ? "Empfehlung wird erstellt..." : "Empfehlung suchen"}
           </button>
 
-          {(antwort || status) && (
+          {(answer || error) && (
             <div
               style={{
-                marginTop: "24px",
-                padding: "22px",
-                borderRadius: "22px",
-                background: "#f8f6ff",
-                border: "1px solid #e7ded3",
-                whiteSpace: "pre-wrap",
-                lineHeight: 1.55,
-                fontSize: "18px"
+                marginTop: "28px",
+                padding: "24px",
+                borderRadius: "24px",
+                background: "#f7f4ff",
+                border: "1px solid #e1d9ff",
               }}
             >
-              <h3 style={{ marginTop: 0 }}>AppYourStyle Antwort</h3>
-              {status && (
-                <p style={{ color: "#6d6760", marginTop: 0 }}>{safeText(status)}</p>
+              <h3 style={{ fontSize: "26px", margin: "0 0 14px" }}>
+                AppYourStyle Empfehlung
+              </h3>
+
+              {error && (
+                <p style={{ color: "#8a1f1f", fontWeight: 700 }}>
+                  Hinweis: {toText(error)}
+                </p>
               )}
-              <p>{safeText(antwort)}</p>
+
+              <pre
+                style={{
+                  whiteSpace: "pre-wrap",
+                  fontFamily: "inherit",
+                  fontSize: "18px",
+                  lineHeight: 1.55,
+                  margin: 0,
+                }}
+              >
+                {toText(answer)}
+              </pre>
             </div>
           )}
         </div>
