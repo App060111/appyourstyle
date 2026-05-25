@@ -1,89 +1,138 @@
-"use client";
+function fallbackProducts(query = "") {
+  const lower = String(query || "").toLowerCase();
 
-import { useState } from "react";
-
-export default function AISearchPage() {
-  const [question, setQuestion] = useState("Welche Größe soll ich bei Hoka kaufen, wenn Nike EU 44 passt?");
-  const [loading, setLoading] = useState(false);
-  const [answer, setAnswer] = useState(null);
-  const [error, setError] = useState("");
-
-  async function runAI() {
-    setLoading(true);
-    setError("");
-    setAnswer(null);
-
-    try {
-      const response = await fetch("/api/appyourstyle_ai_endpoint", {
-        method: "POST",
-        headers: {
-          "Content-Type": "application/json"
-        },
-        body: JSON.stringify({
-          question,
-          source: "AppYourStyle AI Suche",
-          category: "groesse",
-          brands: ["Nike", "Hoka"]
-        })
-      });
-
-      const data = await response.json();
-
-      if (!response.ok || !data.success) {
-        throw new Error(data.error || "KI konnte keine Antwort erzeugen.");
-      }
-
-      setAnswer(data.result);
-    } catch (err) {
-      setError(err.message || "Unbekannter Fehler");
-    } finally {
-      setLoading(false);
-    }
+  if (lower.includes("kind") || lower.includes("reise") || lower.includes("london") || lower.includes("barcelona")) {
+    return [
+      { label: "Wasserfeste Sneaker", reason: "für viel Laufweg und wechselhaftes Wetter", url: "#" },
+      { label: "Leichte Jacke", reason: "für Layering bei kühlen Abenden", url: "#" },
+      { label: "Packtasche", reason: "für kurze Reisen mit Kind", url: "#" },
+      { label: "Bequemer Hoodie", reason: "für Reise, Flug und Alltag", url: "#" }
+    ];
   }
 
-  return (
-    <main style={{ minHeight: "100vh", padding: "32px", background: "#f6f3ef", fontFamily: "Arial, sans-serif" }}>
-      <section style={{ maxWidth: "760px", margin: "0 auto" }}>
-        <div style={{ marginBottom: "32px", padding: "24px", borderRadius: "28px", background: "white" }}>
-          <h1 style={{ fontSize: "42px", margin: "0 0 12px" }}>AppYourStyle</h1>
-          <p style={{ fontSize: "18px", color: "#6d6760" }}>Live KI-Größenberatung mit OpenAI.</p>
-        </div>
+  if (lower.includes("hochzeit") || lower.includes("braut")) {
+    return [
+      { label: "Elegante Tasche", reason: "kleine Ergänzung statt komplettem Neukauf", url: "#" },
+      { label: "Dezenter Schmuck", reason: "stimmt vorhandene Looks hochwertiger ab", url: "#" },
+      { label: "Farblich passende Schuhe", reason: "hilft bei Gruppenharmonie", url: "#" },
+      { label: "Leichter Schal", reason: "für Abendtemperaturen und Farbakzent", url: "#" }
+    ];
+  }
 
-        <div style={{ padding: "28px", borderRadius: "28px", background: "white", border: "1px solid #e7ded4" }}>
-          <span style={{ display: "inline-block", padding: "10px 16px", borderRadius: "999px", background: "#f0ecff", color: "#6d5dfc", fontWeight: 800 }}>
-            AI Suche
-          </span>
+  if (lower.includes("bewerbung") || lower.includes("stelle")) {
+    return [
+      { label: "Blazer", reason: "hebt vorhandene Basics seriös an", url: "#" },
+      { label: "Schlichte Lederschuhe", reason: "wirkt professionell und sicher", url: "#" },
+      { label: "Business-Hose", reason: "kombinierbar mit vorhandenen Oberteilen", url: "#" },
+      { label: "Dezente Tasche", reason: "unterstützt einen ruhigen Auftritt", url: "#" }
+    ];
+  }
 
-          <h2 style={{ fontSize: "38px", margin: "24px 0 18px" }}>Frage deine Größe.</h2>
+  return [
+    { label: "Komfort-Sneaker", reason: "sinnvoll für Alltag und viel Bewegung", url: "#" },
+    { label: "Layering-Jacke", reason: "macht Outfits wetterflexibler", url: "#" },
+    { label: "Basic-Hoodie", reason: "kombinierbar mit vielen Looks", url: "#" },
+    { label: "Reisehose", reason: "bequem und vielseitig nutzbar", url: "#" }
+  ];
+}
 
-          <textarea
-            value={question}
-            onChange={(event) => setQuestion(event.target.value)}
-            rows={4}
-            style={{ width: "100%", boxSizing: "border-box", padding: "18px", borderRadius: "20px", border: "1px solid #ded6cc", fontSize: "18px" }}
-          />
+function fallbackAnswer(query = "") {
+  const lower = String(query || "").toLowerCase();
 
-          <button
-            onClick={runAI}
-            disabled={loading}
-            style={{ width: "100%", marginTop: "18px", padding: "20px", borderRadius: "22px", border: 0, background: "#000", color: "#fff", fontWeight: 800, fontSize: "18px" }}
-          >
-            {loading ? "KI analysiert..." : "Empfehlung suchen"}
-          </button>
+  if (lower.includes("hoka") && lower.includes("nike")) {
+    return "Wenn Nike EU 44 passt, prüfe bei Hoka meist EU 44 2/3 oder EU 45. Für normalen Sitz: EU 44 2/3. Für breiteren Fuß, lange Wege oder mehr Komfort: EU 45.";
+  }
 
-          {error && (
-            <div style={{ marginTop: "22px", padding: "18px", borderRadius: "18px", background: "#fff1f1", color: "#9b1c1c" }}>
-              Fehler: {error}
-            </div>
-          )}
+  if (lower.includes("london") || lower.includes("barcelona") || lower.includes("reise") || lower.includes("tage")) {
+    return "Für diese Reise zählt Komfort vor Neukauf: bequeme Schuhe, leichte Jacke, Layering und eine kleine Packlogik. Bei Kind und viel Laufweg sind wasserfeste Schuhe, Hoodie und flexible Jacke sinnvoller als ein rein modischer Look.";
+  }
 
-          {answer && (
-            <div style={{ marginTop: "22px", padding: "22px", borderRadius: "22px", background: "#f4f1ff", whiteSpace: "pre-wrap", fontSize: "17px", lineHeight: 1.55 }}>
-              {answer}
-            </div>
-          )}
-        </div>
-      </section>
-    </main>
-  );
+  if (lower.includes("hochzeit") || lower.includes("braut")) {
+    return "Für Hochzeit oder Brautjungfern zuerst vorhandene Kleidung farblich ordnen. Ziel: harmonische Farben, gleiche Eleganzstufe und wenige Ergänzungen wie Tasche, Schuhe, Schmuck oder Schal statt komplettem Neukauf.";
+  }
+
+  if (lower.includes("bewerbung")) {
+    return "Für eine Bewerbung sollte der Look ruhig, gepflegt und zur Branche passend sein. Nutze vorhandene Basics, ergänze bei Bedarf Blazer, schlichte Schuhe oder eine strukturierte Tasche.";
+  }
+
+  return "AppYourStyle Empfehlung: Starte mit vorhandener Kleidung und ergänze nur, was Komfort, Wettertauglichkeit oder Anlasswirkung wirklich verbessert.";
+}
+
+export async function POST(req) {
+  try {
+    const body = await req.json().catch(() => ({}));
+    const query = body?.query || body?.frage || body?.question || body?.prompt || "";
+    const memory = body?.memory || {};
+    const apiKey = process.env.OPENAI_API_KEY;
+
+    const fallback = {
+      success: true,
+      mode: "fallback",
+      result: fallbackAnswer(query),
+      visualPrompt: `Realistische AppYourStyle Outfit-Situation: ${query || "Größen- und Outfitberatung"}; berücksichtigt Komfort, Wetter, Anlass, vorhandene Kleidung und wenige sinnvolle Ergänzungen.`,
+      products: fallbackProducts(query)
+    };
+
+    if (!apiKey) {
+      return Response.json({ ...fallback, mode: "fallback_no_key" });
+    }
+
+    const openaiResponse = await fetch("https://api.openai.com/v1/chat/completions", {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+        Authorization: `Bearer ${apiKey}`
+      },
+      body: JSON.stringify({
+        model: "gpt-4o-mini",
+        messages: [
+          {
+            role: "system",
+            content:
+              "Du bist AppYourStyle, eine deutsche KI-Fashion-, Größen- und Kontextplattform. Antworte kurz, konkret, hilfreich und kaufunterstützend. Kein aggressives Verkaufen. Gib immer normalen Text zurück."
+          },
+          {
+            role: "user",
+            content:
+              `Nutzerfrage: ${query}\nTemporärer Kontext: ${JSON.stringify(memory, null, 2)}\nGib Kurz-Zusammenfassung, Empfehlung, Komfort-/Risiko-Hinweis, visuelle Outfitbeschreibung und sinnvolle Ergänzungen.`
+          }
+        ],
+        temperature: 0.45
+      })
+    });
+
+    const data = await openaiResponse.json().catch(() => ({}));
+
+    if (!openaiResponse.ok) {
+      return Response.json({
+        ...fallback,
+        mode: "fallback_openai_error",
+        debug: data?.error?.message || "OpenAI request failed"
+      });
+    }
+
+    return Response.json({
+      success: true,
+      mode: "openai",
+      result: String(data?.choices?.[0]?.message?.content || fallback.result),
+      visualPrompt: `KI-Bildidee: ${query || "Outfitberatung"} — realistische Szene, Wettergefühl, Layering, Komfort, vorhandene Kleidung, kontextbasierte Ergänzungen.`,
+      products: fallbackProducts(query)
+    });
+  } catch (error) {
+    return Response.json({
+      success: true,
+      mode: "fallback_exception",
+      result: fallbackAnswer(""),
+      visualPrompt: "Stabile Fallback-Outfitbeschreibung mit Komfort, Layering und Anlassbezug.",
+      products: fallbackProducts(""),
+      debug: error?.message || "unknown"
+    });
+  }
+}
+
+export async function GET() {
+  return Response.json({
+    success: true,
+    result: "AppYourStyle API ist bereit."
+  });
 }
