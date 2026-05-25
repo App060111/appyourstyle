@@ -20,7 +20,24 @@ const DEFAULT_PRODUCTS = [
 function safeText(value, fallback = "") {
   if (typeof value === "string") return value;
   if (value === null || value === undefined) return fallback;
-  try { return JSON.stringify(value, null, 2); } catch { return fallback; }
+  try {
+    return JSON.stringify(value, null, 2);
+  } catch {
+    return fallback;
+  }
+}
+
+function normalizeProducts(value) {
+  if (!Array.isArray(value)) return DEFAULT_PRODUCTS;
+  const mapped = value
+    .filter(Boolean)
+    .map((item) => ({
+      label: safeText(item?.label || item?.name, "Sinnvolle Ergänzung"),
+      reason: safeText(item?.reason || item?.why, "passt zur Situation"),
+      url: safeText(item?.url, "#")
+    }))
+    .filter((item) => item.label);
+  return mapped.length ? mapped : DEFAULT_PRODUCTS;
 }
 
 export default function AppYourStylePage() {
@@ -30,21 +47,35 @@ export default function AppYourStylePage() {
   const [products, setProducts] = useState(DEFAULT_PRODUCTS);
   const [loading, setLoading] = useState(false);
   const [notice, setNotice] = useState("");
-  const [memory, setMemory] = useState({ sizes: "", favoriteColors: "", comfort: "bequem", brands: "" });
+  const [memory, setMemory] = useState({
+    sizes: "",
+    favoriteColors: "",
+    comfort: "bequem",
+    brands: ""
+  });
 
   useEffect(() => {
     try {
-      const saved = localStorage.getItem("appyourstyle_context_memory");
-      if (saved) setMemory((prev) => ({ ...prev, ...JSON.parse(saved) }));
-    } catch {}
+      const saved = window.localStorage.getItem("appyourstyle_context_memory");
+      if (saved) {
+        const parsed = JSON.parse(saved);
+        setMemory((prev) => ({ ...prev, ...parsed }));
+      }
+    } catch {
+      // LocalStorage darf die App nie blockieren.
+    }
   }, []);
 
   useEffect(() => {
-    try { localStorage.setItem("appyourstyle_context_memory", JSON.stringify(memory)); } catch {}
+    try {
+      window.localStorage.setItem("appyourstyle_context_memory", JSON.stringify(memory));
+    } catch {
+      // LocalStorage darf die App nie blockieren.
+    }
   }, [memory]);
 
   const contextLabel = useMemo(() => {
-    const text = query.toLowerCase();
+    const text = String(query || "").toLowerCase();
     if (text.includes("hochzeit") || text.includes("braut")) return "Anlass: Hochzeit";
     if (text.includes("bewerbung") || text.includes("stelle")) return "Anlass: Bewerbung";
     if (text.includes("konzert") || text.includes("festival")) return "Anlass: Konzert/Event";
@@ -62,27 +93,36 @@ export default function AppYourStylePage() {
       const response = await fetch("/api/appyourstyle_ai_endpoint", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ query, memory })
+        body: JSON.stringify({ query, frage: query, memory })
       });
 
-      const data = await response.json().catch(() => ({}));
-      setAnswer(safeText(data?.result || data?.answer || data?.analysis, "Keine Antwort erhalten."));
-      setVisualPrompt(safeText(data?.visualPrompt || data?.imagePrompt, "Realistische Outfit-Situation mit Wettergefühl, Layering und Komfort."));
+      const data = await response.json().catch(() => ({
+        success: false,
+        result: "Die API hat keine lesbare JSON-Antwort geliefert."
+      }));
 
-      if (Array.isArray(data?.products) && data.products.length > 0) {
-        setProducts(data.products.map((item) => ({
-          label: safeText(item?.label || item?.name, "Sinnvolle Ergänzung"),
-          reason: safeText(item?.reason || item?.why, "passt zur Situation"),
-          url: safeText(item?.url, "#")
-        })));
-      } else {
-        setProducts(DEFAULT_PRODUCTS);
+      const nextAnswer = safeText(
+        data?.result || data?.answer || data?.analysis || data?.message,
+        "Keine Antwort erhalten."
+      );
+
+      setAnswer(nextAnswer);
+      setVisualPrompt(
+        safeText(
+          data?.visualPrompt || data?.imagePrompt,
+          "Realistische Outfit-Situation mit Wettergefühl, Layering und Komfort."
+        )
+      );
+      setProducts(normalizeProducts(data?.products));
+
+      if (!response.ok || (data?.mode && data.mode !== "openai")) {
+        setNotice("Fallback aktiv: AppYourStyle bleibt stabil, auch wenn die Live-KI nicht antwortet.");
       }
-
-      if (data?.mode && data.mode !== "openai") setNotice("Fallback aktiv: Die App bleibt stabil, auch wenn die Live-KI nicht antwortet.");
-    } catch {
+    } catch (error) {
       setNotice("Fallback aktiv: Verbindung konnte nicht erreicht werden.");
-      setAnswer("AppYourStyle Empfehlung: Wähle zuerst den bequemsten vorhandenen Look. Bei viel Laufweg oder Reise sind bequeme Schuhe, Layering und wetterfeste Ergänzungen wichtiger als ein komplett neuer Kauf.");
+      setAnswer(
+        "AppYourStyle Empfehlung: Wähle zuerst den bequemsten vorhandenen Look. Bei viel Laufweg oder Reise sind bequeme Schuhe, Layering und wetterfeste Ergänzungen wichtiger als ein komplett neuer Kauf."
+      );
       setVisualPrompt("Komfortabler, wetterangepasster Outfitlook mit vorhandener Kleidung und wenigen sinnvollen Ergänzungen.");
       setProducts(DEFAULT_PRODUCTS);
     } finally {
@@ -104,44 +144,78 @@ export default function AppYourStylePage() {
         <section style={styles.hero}>
           <div style={styles.badge}>{contextLabel}</div>
           <h2 style={styles.title}>Welche Größe? Was ziehe ich an?</h2>
-          <p style={styles.lead}>Starte mit einer einfachen Frage. AppYourStyle denkt in Größenlogik, Situation, Outfitgefühl und sinnvollen Ergänzungen.</p>
+          <p style={styles.lead}>
+            Starte mit einer einfachen Frage. AppYourStyle denkt in Größenlogik, Situation,
+            Outfitgefühl und sinnvollen Ergänzungen.
+          </p>
 
-          <textarea value={query} onChange={(event) => setQuery(event.target.value)} rows={5} style={styles.textarea} placeholder="z. B. 4 Tage Barcelona mit Kind oder Welche Größe brauche ich bei Hoka?" />
+          <textarea
+            value={query}
+            onChange={(event) => setQuery(event.target.value)}
+            rows={5}
+            style={styles.textarea}
+            placeholder="z. B. 4 Tage Barcelona mit Kind oder Welche Größe brauche ich bei Hoka?"
+          />
 
           <div style={styles.chips}>
             {QUICK_PROMPTS.map((prompt) => (
-              <button key={prompt} style={styles.chip} onClick={() => setQuery(prompt)}>{prompt}</button>
+              <button key={prompt} type="button" style={styles.chip} onClick={() => setQuery(prompt)}>
+                {prompt}
+              </button>
             ))}
           </div>
 
           <div style={styles.memoryGrid}>
-            <input style={styles.input} value={memory.sizes} onChange={(e) => setMemory({ ...memory, sizes: e.target.value })} placeholder="Merken: z. B. Nike EU 44" />
-            <input style={styles.input} value={memory.favoriteColors} onChange={(e) => setMemory({ ...memory, favoriteColors: e.target.value })} placeholder="Farben: z. B. schwarz, beige" />
-            <input style={styles.input} value={memory.brands} onChange={(e) => setMemory({ ...memory, brands: e.target.value })} placeholder="Marken: z. B. Nike, Zara" />
-            <select style={styles.input} value={memory.comfort} onChange={(e) => setMemory({ ...memory, comfort: e.target.value })}>
+            <input
+              style={styles.input}
+              value={memory.sizes}
+              onChange={(e) => setMemory({ ...memory, sizes: e.target.value })}
+              placeholder="Merken: z. B. Nike EU 44"
+            />
+            <input
+              style={styles.input}
+              value={memory.favoriteColors}
+              onChange={(e) => setMemory({ ...memory, favoriteColors: e.target.value })}
+              placeholder="Farben: z. B. schwarz, beige"
+            />
+            <input
+              style={styles.input}
+              value={memory.brands}
+              onChange={(e) => setMemory({ ...memory, brands: e.target.value })}
+              placeholder="Marken: z. B. Nike, Zara"
+            />
+            <select
+              style={styles.input}
+              value={memory.comfort}
+              onChange={(e) => setMemory({ ...memory, comfort: e.target.value })}
+            >
               <option value="bequem">Komfort wichtig</option>
               <option value="stylish">Style wichtiger</option>
               <option value="balanced">ausgeglichen</option>
             </select>
           </div>
 
-          <button style={styles.cta} onClick={runAI} disabled={loading}>{loading ? "Empfehlung wird erstellt..." : "Empfehlung suchen"}</button>
+          <button type="button" style={styles.cta} onClick={runAI} disabled={loading}>
+            {loading ? "Empfehlung wird erstellt..." : "Empfehlung suchen"}
+          </button>
         </section>
 
-        {(answer || notice) && (
+        {(answer || notice) ? (
           <section style={styles.result}>
             <div style={styles.resultHeader}>
               <div style={styles.badgeDark}>KI-Ergebnis</div>
               <div style={styles.score}>Komfort-Check aktiv</div>
             </div>
-            {notice ? <p style={styles.notice}>{notice}</p> : null}
+
+            {notice ? <p style={styles.notice}>{safeText(notice)}</p> : null}
+
             <h3 style={styles.sectionTitle}>Empfehlung</h3>
-            <p style={styles.answer}>{answer}</p>
+            <pre style={styles.answerBox}>{safeText(answer, "Keine Antwort")}</pre>
 
             <div style={styles.visualCard}>
               <div>
                 <h3 style={styles.sectionTitle}>KI-Outfitbild / visuelle Richtung</h3>
-                <p style={styles.answer}>{visualPrompt}</p>
+                <pre style={styles.answerBox}>{safeText(visualPrompt, "Keine visuelle Richtung")}</pre>
               </div>
               <div style={styles.visualMock}>
                 <span>Outfitgefühl</span>
@@ -153,18 +227,25 @@ export default function AppYourStylePage() {
             <div style={styles.productGrid}>
               {products.map((product, index) => (
                 <a key={`${product.label}-${index}`} href={product.url || "#"} style={styles.productCard}>
-                  <strong>{product.label}</strong>
-                  <span>{product.reason}</span>
+                  <strong>{safeText(product.label, "Sinnvolle Ergänzung")}</strong>
+                  <span>{safeText(product.reason, "passt zur Situation")}</span>
                 </a>
               ))}
             </div>
+
             <div style={styles.saveBox}>
               <strong>Später speichern?</strong>
-              <span>Sobald du echten Mehrwert hast, kann AppYourStyle dein Stilprofil per Google, Apple oder Magic Link sichern. Kein Login-Zwang am Anfang.</span>
+              <span>
+                Sobald du echten Mehrwert hast, kann AppYourStyle dein Stilprofil per Google, Apple
+                oder Magic Link sichern. Kein Login-Zwang am Anfang.
+              </span>
             </div>
           </section>
-        )}
-        <footer style={styles.footer}><strong>Strategie:</strong> Größenfrage als Einstieg. Outfit-, Reise- und Anlass-KI als täglicher Nutzen.</footer>
+        ) : null}
+
+        <footer style={styles.footer}>
+          <strong>Strategie:</strong> Größenfrage als Einstieg. Outfit-, Reise- und Anlass-KI als täglicher Nutzen.
+        </footer>
       </section>
     </main>
   );
@@ -193,7 +274,7 @@ const styles = {
   score: { background: "#f3efff", color: "#6b58f4", padding: "10px 14px", borderRadius: "999px", fontWeight: 800 },
   notice: { color: "#8a5a00", background: "#fff5d8", padding: "12px 14px", borderRadius: "16px" },
   sectionTitle: { fontSize: "25px", margin: "12px 0" },
-  answer: { fontSize: "18px", lineHeight: 1.6, whiteSpace: "pre-wrap" },
+  answerBox: { fontSize: "18px", lineHeight: 1.6, whiteSpace: "pre-wrap", wordBreak: "break-word", background: "#fff", color: "#111", border: "1px solid #eadfd5", borderRadius: "18px", padding: "16px", fontFamily: "Arial, sans-serif" },
   visualCard: { display: "grid", gridTemplateColumns: "minmax(0, 1.2fr) minmax(220px, 0.8fr)", gap: "18px", background: "#f8f5ff", borderRadius: "26px", padding: "20px", marginTop: "20px" },
   visualMock: { minHeight: "180px", borderRadius: "24px", background: "linear-gradient(135deg, #efe7d8, #c7c0ff)", display: "flex", flexDirection: "column", justifyContent: "flex-end", padding: "20px", color: "#111" },
   productGrid: { display: "grid", gridTemplateColumns: "repeat(auto-fit, minmax(210px, 1fr))", gap: "14px" },
