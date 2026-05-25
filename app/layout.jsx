@@ -1,1 +1,15 @@
-import './globals.css';export const metadata={title:'AppYourStyle — Welche Größe soll ich kaufen?',description:'Kaufempfehlungen, Passform und Smart Outfit Links.'};export default function RootLayout({children}){return <html lang='de'><body>{children}</body></html>}
+export const metadata = {
+  title: "AppYourStyle",
+  description:
+    "KI für Größen, Outfits, Reisen und passende Style-Empfehlungen.",
+};
+
+import "./globals.css";
+
+export default function RootLayout({ children }) {
+  return (
+    <html lang="de">
+      <body>{children}</body>
+    </html>
+  );
+}
