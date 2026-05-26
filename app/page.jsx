@@ -1,80 +1,95 @@
-export default function ZaraSizeGuidePage() {
-  return (
-    <main
-      style={{
-        minHeight: "100vh",
-        padding: "32px",
-        background: "#f6f1ea",
-        color: "#111",
-        fontFamily: "Arial, sans-serif",
-      }}
-    >
-      <section
-        style={{
-          maxWidth: "820px",
-          margin: "0 auto",
-          background: "#fff",
-          border: "1px solid #e3d7ca",
-          borderRadius: "28px",
-          padding: "28px",
-        }}
-      >
-        <a href="/" style={{ color: "#6f675f", fontWeight: 700 }}>
-          ← Zurück zu AppYourStyle
-        </a>
+"use client";
 
-        <h1 style={{ fontSize: "42px", marginTop: "24px" }}>
-          Zara Size Guide
+import { useState } from "react";
+
+const QUICK_PROMPTS = [
+  "Welche Größe brauche ich bei Hoka, wenn Nike EU 44 passt?",
+  "3 Tage London im Herbst mit Kind.",
+  "Was ziehe ich zu einem Rockkonzert an?",
+  "Bewerbung als Projektmanager: Was soll ich tragen?",
+  "Hochzeit am Abend: Was passt ohne Neukauf?"
+];
+
+export default function HomePage() {
+  const [query, setQuery] = useState("");
+  const [result, setResult] = useState("");
+
+  async function runAI() {
+    setResult("Lade Empfehlung ...");
+
+    try {
+      const response = await fetch("/api/appyourstyle_ai_endpoint", {
+        method: "POST",
+        headers: {
+          "Content-Type": "application/json"
+        },
+        body: JSON.stringify({ query })
+      });
+
+      const data = await response.json();
+
+      setResult(data.result || "Keine Antwort gefunden.");
+    } catch (error) {
+      setResult("Fehler bei der Anfrage.");
+    }
+  }
+
+  return (
+    <main className="page">
+      <section className="hero">
+        <div className="badge">Größen- & Outfit-KI</div>
+
+        <h1>
+          Welche Größe?
+          <br />
+          Was ziehe ich an?
         </h1>
 
-        <p style={{ fontSize: "20px", lineHeight: 1.6, color: "#6f675f" }}>
-          Zara fällt je nach Schnitt unterschiedlich aus. Bei körpernahen
-          Schnitten lieber eine Größe größer prüfen. Bei Oversize-Schnitten
-          reicht oft die normale Größe.
+        <p>
+          Starte mit einer einfachen Frage.
+          AppYourStyle denkt in Größenlogik,
+          Situation, Outfitgefühl und sinnvollen Ergänzungen.
         </p>
 
-        <div
-          style={{
-            marginTop: "24px",
-            display: "grid",
-            gap: "14px",
-          }}
-        >
-          <div style={card}>
-            <strong>Oberteile</strong>
-            <p>Regular: normale Größe. Slim/Fitted: eine Größe größer prüfen.</p>
-          </div>
+        <textarea
+          className="input"
+          rows={5}
+          placeholder="z. B. Nike EU 44 → welche Größe bei Hoka?"
+          value={query}
+          onChange={(e) => setQuery(e.target.value)}
+        />
 
-          <div style={card}>
-            <strong>Hosen</strong>
-            <p>
-              Bei Jeans und Stoffhosen auf Bundweite und Stretch-Anteil achten.
-            </p>
-          </div>
-
-          <div style={card}>
-            <strong>Kleider</strong>
-            <p>
-              Bei Brust/Schulter eng geschnittenen Modellen lieber eine Größe
-              größer testen.
-            </p>
-          </div>
-        </div>
-
-        <p style={{ marginTop: "28px", color: "#6f675f" }}>
-          Hinweis: Dies ist eine allgemeine Orientierung und keine offizielle
-          Markenpartnerschaft.
-        </p>
+        <button className="primaryButton" onClick={runAI}>
+          Empfehlung anzeigen
+        </button>
       </section>
+
+      <section className="quickGrid">
+        {QUICK_PROMPTS.map((item) => (
+          <button
+            key={item}
+            className="quickCard"
+            onClick={() => setQuery(item)}
+          >
+            {item}
+          </button>
+        ))}
+      </section>
+
+      {result && (
+        <section className="resultBox">
+          <h2>Empfehlung</h2>
+          <p>{result}</p>
+        </section>
+      )}
+
+      <footer className="footer">
+        <div className="footerLinks">
+          <a href="/">Start</a>
+          <a href="/KI-Suche">KI-Suche</a>
+          <a href="/Imprint">Impressum</a>
+        </div>
+      </footer>
     </main>
   );
 }
-
-const card = {
-  background: "#fbfaf8",
-  border: "1px solid #e3d7ca",
-  borderRadius: "18px",
-  padding: "18px",
-  fontSize: "18px",
-  lineHeight: 1.5,
-};
