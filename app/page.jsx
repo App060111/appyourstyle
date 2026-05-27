@@ -13,8 +13,17 @@ const QUICK_PROMPTS = [
 export default function HomePage() {
   const [query, setQuery] = useState("");
   const [result, setResult] = useState("");
+  const [loading, setLoading] = useState(false);
 
-  async function runAI() {
+  async function runAI(customQuery) {
+    const finalQuery = customQuery || query;
+
+    if (!finalQuery?.trim()) {
+      setResult("Bitte zuerst eine Frage eingeben.");
+      return;
+    }
+
+    setLoading(true);
     setResult("Lade Empfehlung...");
 
     try {
@@ -24,7 +33,7 @@ export default function HomePage() {
           "Content-Type": "application/json"
         },
         body: JSON.stringify({
-          query
+          query: finalQuery
         })
       });
 
@@ -35,8 +44,12 @@ export default function HomePage() {
         "Keine Empfehlung gefunden."
       );
     } catch (error) {
-      setResult("Fehler beim Laden der Empfehlung.");
+      setResult(
+        "Fehler beim Laden der Empfehlung."
+      );
     }
+
+    setLoading(false);
   }
 
   return (
@@ -63,21 +76,40 @@ export default function HomePage() {
           placeholder="z. B. Nike Größe 44,5 – was bei Lloyd?"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
+          rows={4}
         />
 
         <button
           className="primaryButton"
-          onClick={runAI}
+          onClick={() => runAI()}
+          disabled={loading}
         >
-          Empfehlung anzeigen
+          {loading
+            ? "Lade..."
+            : "Empfehlung anzeigen"}
         </button>
+
+        {result && (
+          <section className="resultCard">
+            <h2 className="resultTitle">
+              Empfehlung
+            </h2>
+
+            <p className="resultText">
+              {result}
+            </p>
+          </section>
+        )}
 
         <div className="quickPrompts">
           {QUICK_PROMPTS.map((prompt) => (
             <button
               key={prompt}
               className="promptButton"
-              onClick={() => setQuery(prompt)}
+              onClick={() => {
+                setQuery(prompt);
+                runAI(prompt);
+              }}
             >
               {prompt}
             </button>
@@ -85,15 +117,30 @@ export default function HomePage() {
         </div>
       </section>
 
-      {result && (
-        <section className="resultCard">
-          <h2>Empfehlung</h2>
+      <footer className="footer">
+        <div className="footerLinks">
+          <a href="/">
+            Start
+          </a>
 
-          <p className="resultText">
-            {result}
-          </p>
-        </section>
-      )}
+          <a href="/impressum">
+            Impressum
+          </a>
+
+          <a href="/datenschutz">
+            Datenschutz
+          </a>
+
+          <a href="/marken">
+            Marken
+          </a>
+        </div>
+
+        <p className="legalNote">
+          AppYourStyle – KI für Größen,
+          Outfit-Empfehlungen und Stilberatung.
+        </p>
+      </footer>
     </main>
   );
 }
