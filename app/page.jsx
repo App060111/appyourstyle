@@ -1,6 +1,7 @@
 "use client";
 
 import { useState } from "react";
+import AppYourStyleAIWidget from "./Komponenten/AppYourStyleAIWidget";
 
 const QUICK_PROMPTS = [
   "Welche Größe brauche ich bei Hoka, wenn Nike EU 44 passt?",
@@ -54,6 +55,7 @@ export default function HomePage() {
 
   return (
     <main className="page">
+     <AppYourStyleAIWidget />
       <section className="hero">
         <span className="badge">
           Größen- & Outfit-KI
