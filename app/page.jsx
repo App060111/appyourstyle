@@ -15,7 +15,7 @@ export default function HomePage() {
   const [result, setResult] = useState("");
 
   async function runAI() {
-    setResult("Lade Empfehlung ...");
+    setResult("Lade Empfehlung...");
 
     try {
       const response = await fetch("/api/appyourstyle_ai_endpoint", {
@@ -23,29 +23,36 @@ export default function HomePage() {
         headers: {
           "Content-Type": "application/json"
         },
-        body: JSON.stringify({ query })
+        body: JSON.stringify({
+          query
+        })
       });
 
       const data = await response.json();
 
-      setResult(data.result || "Keine Antwort gefunden.");
+      setResult(
+        data?.result ||
+        "Keine Empfehlung gefunden."
+      );
     } catch (error) {
-      setResult("Fehler bei der Anfrage.");
+      setResult("Fehler beim Laden der Empfehlung.");
     }
   }
 
   return (
     <main className="page">
       <section className="hero">
-        <div className="badge">Größen- & Outfit-KI</div>
+        <span className="badge">
+          Größen- & Outfit-KI
+        </span>
 
-        <h1>
+        <h1 className="title">
           Welche Größe?
           <br />
           Was ziehe ich an?
         </h1>
 
-        <p>
+        <p className="subtitle">
           Starte mit einer einfachen Frage.
           AppYourStyle denkt in Größenlogik,
           Situation, Outfitgefühl und sinnvollen Ergänzungen.
@@ -53,43 +60,40 @@ export default function HomePage() {
 
         <textarea
           className="input"
-          rows={5}
-          placeholder="z. B. Nike EU 44 → welche Größe bei Hoka?"
+          placeholder="z. B. Nike Größe 44,5 – was bei Lloyd?"
           value={query}
           onChange={(e) => setQuery(e.target.value)}
         />
 
-        <button className="primaryButton" onClick={runAI}>
+        <button
+          className="primaryButton"
+          onClick={runAI}
+        >
           Empfehlung anzeigen
         </button>
-      </section>
 
-      <section className="quickGrid">
-        {QUICK_PROMPTS.map((item) => (
-          <button
-            key={item}
-            className="quickCard"
-            onClick={() => setQuery(item)}
-          >
-            {item}
-          </button>
-        ))}
+        <div className="quickPrompts">
+          {QUICK_PROMPTS.map((prompt) => (
+            <button
+              key={prompt}
+              className="promptButton"
+              onClick={() => setQuery(prompt)}
+            >
+              {prompt}
+            </button>
+          ))}
+        </div>
       </section>
 
       {result && (
-        <section className="resultBox">
+        <section className="resultCard">
           <h2>Empfehlung</h2>
-          <p>{result}</p>
+
+          <p className="resultText">
+            {result}
+          </p>
         </section>
       )}
-
-      <footer className="footer">
-        <div className="footerLinks">
-          <a href="/">Start</a>
-          <a href="/KI-Suche">KI-Suche</a>
-          <a href="/Imprint">Impressum</a>
-        </div>
-      </footer>
     </main>
   );
 }
