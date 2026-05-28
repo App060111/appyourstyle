@@ -5,12 +5,10 @@ export async function GET() {
     statusText: "Visualisierung wird vorbereitet."
   });
 }
-
 export async function POST(req) {
   try {
     const body = await req.json().catch(() => ({}));
     const visualPrompt = body?.visualPrompt || body?.query || "AppYourStyle Outfit-Visualisierung wird vorbereitet.";
-
     return Response.json({
       success: true,
       status: "fallback_visual_ready",
